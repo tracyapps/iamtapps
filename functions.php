@@ -92,6 +92,7 @@ add_action( 'widgets_init', 'iamtapps_widgets_init' );
  * Enqueue scripts and styles.
  */
 function iamtapps_scripts() {
+	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=News+Cycle:400,700|Love+Ya+Like+A+Sister', '1.2.3', 'all' );
 	wp_enqueue_style( 'gridism', get_template_directory_uri() . '/css/gridism.css','1.0.0', 'all' );
 	wp_enqueue_style( 'iamtapps-style', get_stylesheet_uri() );
 

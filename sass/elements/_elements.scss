@@ -1,3 +1,34 @@
+body {
+	background: purple; height: 100%; width: 100%;
+	-webkit-animation: backgroundColor 145s linear infinite;
+	-moz-animation: backgroundColor 145s linear infinite;
+	animation: backgroundColor 145s linear infinite;
+}
+@-webkit-keyframes backgroundColor {
+	0% {background: #d10606;}
+	20% {background: #ffff00;}
+	40% {background: #00ffff;}
+	60% {background: #2466df;}
+	80% {background: #6f24e0;}
+	100% {background: #d10606;}
+}
+@-moz-keyframes backgroundColor {
+	0% {background: #d10606;}
+	20% {background: #ffff00;}
+	40% {background: #00ffff;}
+	60% {background: #2466df;}
+	80% {background: #6f24e0;}
+	100% {background: #d10606;}
+}
+@keyframes backgroundColor {
+	0% {background: #d10606;}
+	20% {background: #ffff00;}
+	40% {background: #00ffff;}
+	60% {background: #2466df;}
+	80% {background: #6f24e0;}
+	100% {background: #d10606;}
+}
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;
@@ -8,8 +39,8 @@ hr {
 @import "lists";
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%;
 }
 
 figure {
