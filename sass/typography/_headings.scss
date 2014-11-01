@@ -2,6 +2,13 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font__titles;
 }
-h1 {font-size: 5.7em;}
-h2 {font-size: 2.4em;}
-h3 {font-size: 1.3em;}
+h1 {font-size: 4.0em;
+	&.site-title {font-size: 6em; color: $white; @include text-shadow; margin-top: 1em;}
+}
+h2 {font-size: 3.0em;
+	&.site-description {font: 1.4em/1em $font__main; margin: -30px 0px 0px -10px; color: rgba($white, 0.65);}
+}
+h3 {font-size: 2.0em;}
+h4 {font-size: 1.5em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.1em;}

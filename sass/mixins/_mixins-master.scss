@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1.6) {
 	font-size: ($sizeValue * 10) + px;
@@ -33,4 +35,11 @@
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
 	clear: both;
+}
+
+@mixin text-letterpress {
+	text-shadow:  -1px 0px 0 rgba( 255, 255, 255, 0.7 );
+}
+@mixin text-shadow {
+	text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.4 );
 }

@@ -13,3 +13,13 @@
 .aligncenter {
 	@include center-block;
 }
+
+.textcenter {
+	text-align: center;
+}
+.textright {
+	text-align: right;
+}
+.textleft {
+	text-align: left;
+}

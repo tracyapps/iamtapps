@@ -71,11 +71,19 @@ body, button, input, select, textarea { color: #404040; font-family: "News Cycle
 
 h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Love Ya Like A Sister", cursive; }
 
-h1 { font-size: 5.7em; }
+h1 { font-size: 4.0em; }
+h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); margin-top: 1em; }
 
-h2 { font-size: 2.4em; }
+h2 { font-size: 3.0em; }
+h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -30px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); }
 
-h3 { font-size: 1.3em; }
+h3 { font-size: 2.0em; }
+
+h4 { font-size: 1.5em; }
+
+h5 { font-size: 1.4em; }
+
+h6 { font-size: 1.1em; }
 
 p { margin-bottom: 1.5em; }
 
@@ -108,7 +116,9 @@ big { font-size: 125%; }
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-body { background: purple; height: 100%; width: 100%; -webkit-animation: backgroundColor 200s linear infinite; -moz-animation: backgroundColor 200s linear infinite; animation: backgroundColor 200s linear infinite; }
+html { height: 100%; width: 100%; }
+
+body { background: purple; height: 100%; width: 100%; -webkit-animation: backgroundColor 300s linear infinite; -moz-animation: backgroundColor 300s linear infinite; animation: backgroundColor 300s linear infinite; }
 
 @-webkit-keyframes backgroundColor { 0% { background: #d10606; }
   20% { background: #ffff00; }
@@ -128,6 +138,8 @@ body { background: purple; height: 100%; width: 100%; -webkit-animation: backgro
   60% { background: #2466df; }
   80% { background: #6f24e0; }
   100% { background: #d10606; } }
+svg#bgtexture { display: none; }
+
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 ul, ol { margin: 0 0 1.5em 3em; }
@@ -226,6 +238,12 @@ a:hover, a:focus, a:active { color: midnightblue; }
 .alignright { display: inline; float: right; margin-left: 1.5em; }
 
 .aligncenter { display: block; margin: 0 auto; }
+
+.textcenter { text-align: center; }
+
+.textright { text-align: right; }
+
+.textleft { text-align: left; }
 
 /*--------------------------------------------------------------
 8.0 Clearings

@@ -19,12 +19,16 @@
 </head>
 
 <body <?php body_class(); ?>>
+<svg id="bgtexture" xmlns='http://www.w3.org/2000/svg' width='8' height='8'>
+	<rect width='8' height='8' fill='rgba(0,0,0,0.7)'/>
+	<path d='M0 0L8 8ZM8 0L0 8Z' stroke-width='1' stroke='rgba(0,0,0,0.15)'/>
+</svg>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'iamtapps' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	<header id="masthead" class="site-header grid wider" role="banner">
+		<div class="site-branding unit whole textcenter">
+			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
