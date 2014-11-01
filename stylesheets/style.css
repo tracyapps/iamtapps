@@ -1,24 +1,16 @@
 /*
 Theme Name: iamtapps
-Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>iamtapps</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Theme URI: http://iamtapps.com
+Author: tapps
+Author URI: http://iamtapps.com
+Description: Hi. I'm tapps.
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iamtapps
 Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- iamtapps is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
+tapps, custom theme, unicorns, bacon, rainbows, glitter, lots of glitter
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -90,7 +82,7 @@ html {
 
 /* line 30, ../sass/_reset.scss */
 body {
-  background: #fff;
+  background: purple;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -163,7 +155,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "News Cycle", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -265,6 +257,76 @@ big {
 3.0 Elements
 --------------------------------------------------------------*/
 /* line 1, ../sass/elements/_elements.scss */
+body {
+  background: purple;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: backgroundColor 145s linear infinite;
+  -moz-animation: backgroundColor 145s linear infinite;
+  animation: backgroundColor 145s linear infinite;
+}
+
+@-webkit-keyframes backgroundColor {
+  0% {
+    background: #d10606;
+  }
+  20% {
+    background: #ffff00;
+  }
+  40% {
+    background: #00ffff;
+  }
+  60% {
+    background: #2466df;
+  }
+  80% {
+    background: #6f24e0;
+  }
+  100% {
+    background: #d10606;
+  }
+}
+@-moz-keyframes backgroundColor {
+  0% {
+    background: #d10606;
+  }
+  20% {
+    background: #ffff00;
+  }
+  40% {
+    background: #00ffff;
+  }
+  60% {
+    background: #2466df;
+  }
+  80% {
+    background: #6f24e0;
+  }
+  100% {
+    background: #d10606;
+  }
+}
+@keyframes backgroundColor {
+  0% {
+    background: #d10606;
+  }
+  20% {
+    background: #ffff00;
+  }
+  40% {
+    background: #00ffff;
+  }
+  60% {
+    background: #2466df;
+  }
+  80% {
+    background: #6f24e0;
+  }
+  100% {
+    background: #d10606;
+  }
+}
+/* line 32, ../sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -304,15 +366,13 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 10, ../sass/elements/_elements.scss */
+/* line 41, ../sass/elements/_elements.scss */
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */
 }
 
-/* line 15, ../sass/elements/_elements.scss */
+/* line 46, ../sass/elements/_elements.scss */
 figure {
   margin: 0;
 }
