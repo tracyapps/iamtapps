@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>>
 <svg id="bgtexture" xmlns='http://www.w3.org/2000/svg' width='8' height='8'>
 	<rect width='8' height='8' fill='rgba(0,0,0,0.6)'/>
-	<path d='M0 0L8 8ZM8 0L0 8Z' stroke-width='1' stroke='rgba(0,0,0,0.15)'/>
+	<path d='M0 0L8 8ZM8 0L0 8Z' stroke-width='1' stroke='rgba(40,40,40,0.2)'/>
 </svg>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'iamtapps' ); ?></a>
