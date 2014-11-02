@@ -29,7 +29,8 @@ body {
 	80% {background: #6f24e0;}
 	100% {background: #d10606;}
 }
-svg#bgtexture {display:none;}
+svg#bgtexture,
+svg#bgtexture2 {display:none;}
 .blast {
 	display: inline-block;
 	opacity: 0;

@@ -72,7 +72,7 @@ body, button, input, select, textarea { color: #404040; font-family: "News Cycle
 h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Love Ya Like A Sister", cursive; }
 
 h1 { font-size: 4.0em; }
-h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); margin-top: 1em; }
+h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); margin-top: 1em; }
 
 h2 { font-size: 3.0em; }
 h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -30px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); }
@@ -138,7 +138,7 @@ body { background: purple; height: 100%; width: 100%; -webkit-animation: backgro
   60% { background: #2466df; }
   80% { background: #6f24e0; }
   100% { background: #d10606; } }
-svg#bgtexture { display: none; }
+svg#bgtexture, svg#bgtexture2 { display: none; }
 
 .blast { display: inline-block; opacity: 0; }
 
