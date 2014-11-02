@@ -29,7 +29,7 @@
 	<header id="masthead" class="site-header grid wider" role="banner">
 		<div class="site-branding unit whole textcenter">
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h2 class="site-description animatein"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

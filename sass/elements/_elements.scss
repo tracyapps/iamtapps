@@ -30,6 +30,10 @@ body {
 	100% {background: #d10606;}
 }
 svg#bgtexture {display:none;}
+.blast {
+	display: inline-block;
+	opacity: 0;
+}
 hr {
 	background-color: $color__background-hr;
 	border: 0;

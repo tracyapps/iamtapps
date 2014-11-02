@@ -140,6 +140,8 @@ body { background: purple; height: 100%; width: 100%; -webkit-animation: backgro
   100% { background: #d10606; } }
 svg#bgtexture { display: none; }
 
+.blast { display: inline-block; opacity: 0; }
+
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 ul, ol { margin: 0 0 1.5em 3em; }
