@@ -891,7 +891,7 @@ a:hover, a:focus, a:active { color: midnightblue; }
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
-#page { height: 100%; }
+#page { min-height: 100%; }
 
 .sticky { display: block; }
 
@@ -904,6 +904,16 @@ a:hover, a:focus, a:active { color: midnightblue; }
 .page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; }
 
 .page-links { clear: both; margin: 0 0 1.5em; }
+
+.bcg { background-repeat: no-repeat; }
+
+.section.with-bg { height: 500px; }
+
+.home-intro { margin-top: 5em; }
+
+#skrollr-body { height: 2000px; position: relative; z-index: -1; }
+#skrollr-body svg { width: 356px; height: 202px; position: fixed; bottom: 2%; right: 5%; }
+#skrollr-body path { stroke-dasharray: 1000; fill: none; stroke-width: 2; stroke: rgba(0, 0, 0, 0.6); }
 
 /*--------------------------------------------------------------
 10.2 Asides

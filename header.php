@@ -30,7 +30,7 @@
 	<rect width='300' height='300' fill='rgba(0,0,0,0.7)'/>
 	<rect width='300' height='300' filter="url(#n)" opacity='0.2'/>
 </svg>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site clearfix">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'iamtapps' ); ?></a>
 
 	<header id="masthead" class="site-header grid wider" role="banner">

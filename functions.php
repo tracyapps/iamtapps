@@ -38,7 +38,7 @@ function iamtapps_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -70,23 +70,6 @@ function iamtapps_setup() {
 endif; // iamtapps_setup
 add_action( 'after_setup_theme', 'iamtapps_setup' );
 
-/**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
-function iamtapps_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'iamtapps' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'iamtapps_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -97,10 +80,11 @@ function iamtapps_scripts() {
 	wp_enqueue_style( 'iamtapps-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'iamtapps-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'iamtapps-global', get_template_directory_uri() . '/js/global.js', array(), '1.2.3', true );
 	wp_enqueue_script( 'iamtapps-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'blast', get_template_directory_uri() . '/js/jquery.blast.min.js', array( 'jquery' ), '1.1.0', false );
 	wp_enqueue_script( 'velocity', get_template_directory_uri() . '/js/velocity.min.js', array(), '1.1.0', false );
+	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array(), '0.6.27', true );
+	wp_enqueue_script( 'iamtapps-global', get_template_directory_uri() . '/js/global.js', array(), '1.2.3', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -109,9 +93,9 @@ function iamtapps_scripts() {
 add_action( 'wp_enqueue_scripts', 'iamtapps_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Custom functions for iamtapps
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/iamtapps-functions.php';
 
 /**
  * Custom template tags for this theme.
