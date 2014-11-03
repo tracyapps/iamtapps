@@ -13,9 +13,9 @@ get_header(); ?>
 				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'section-bg-image' ); ?>
 				<div class="bcg section with-bg home-intro"
 					 style="background-image: url('<?php echo esc_url( $image[0] ); ?>')"
-					 data-center="background-position: 50% 0px;"
-					 data-bottom-top="background-position: 50% 100px;"
-					 data-top-bottom="background-position: 50% -200px;">
+					 data-center="background-position: 50% 100px;"
+					 data-bottom-top="background-position: 50% 300px;"
+					 data-top-bottom="background-position: 50% -100px;">
 
 					<div id="what-i-do" class="grid align-center">
 						<?php //start category list box thing
@@ -30,11 +30,11 @@ get_header(); ?>
 								$the_category = get_category( $cat_id, 'category' );
 								$the_category_icon = get_tax_meta( $cat_id, 'tm_category-icon' );
 								$the_category_icon_path = get_template_directory_uri() .'/images/iconic/svg/smart/';
-								echo '<div class="catbox"><img class="iconic" data-src="' . $the_category_icon_path . $the_category_icon . '.svg" /><h6><a href="' . $the_category->slug . '">' . $the_category->name . '</a></h6><p>' . $the_category->category_description . '</p></div>';
+								echo '<div class="catbox" data-start="opacity: 0" data-center-top="opacity: 1" data-100-start="opacity:1" data-anchor-target="#what-i-do .catbox"><img class="iconic" data-src="' . $the_category_icon_path . $the_category_icon . '.svg" /><h6><a href="' . $the_category->slug . '">' . $the_category->name . '</a></h6><p>' . $the_category->category_description . '</p></div>';
 
 							endforeach;
 						?>
-
+						</div>
 					</div>
 					<?php echo the_content(); ?>
 				</div>

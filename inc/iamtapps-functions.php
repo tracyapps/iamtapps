@@ -74,7 +74,7 @@ class Portfolio_CPT extends CPT_Core {
 	public function columns_display( $column ) {
 		switch ( $column ) {
 			case 'thumbnail':
-				the_post_thumbnail();
+				the_post_thumbnail( array( 200, 100 ) );
 				break;
 		}
 	}
