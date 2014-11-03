@@ -32,17 +32,20 @@
 </svg>
 <div id="page" class="hfeed site clearfix">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'iamtapps' ); ?></a>
-
+	<div id="stickyHeader">
+		<div id="stickyHeaderContent" class="grid wider">
+			<h1 class="site-title-smaller"><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', 'iamtapps' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+		</div><!--/stickyHeaderContent-->
+	</div><!--/stickyHeader-->
 	<header id="masthead" class="site-header grid wider" role="banner">
 		<div class="site-branding unit whole textcenter">
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 			<h2 class="site-description animatein"><?php bloginfo( 'description' ); ?></h2>
 		</div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'iamtapps' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

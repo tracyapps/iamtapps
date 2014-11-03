@@ -83,8 +83,10 @@ function iamtapps_scripts() {
 	wp_enqueue_script( 'iamtapps-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'iconic', get_template_directory_uri() . '/js/iconic.min.js', array(), '0.4.0', false );
 	wp_enqueue_script( 'blast', get_template_directory_uri() . '/js/jquery.blast.min.js', array( 'jquery' ), '1.1.0', false );
+	wp_enqueue_script( 'sticky', get_template_directory_uri() . '/js/jquery.sticky.js', array( 'jquery' ), '1.0.0', false );
 	wp_enqueue_script( 'velocity', get_template_directory_uri() . '/js/velocity.min.js', array(), '1.1.0', false );
 	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array(), '0.6.27', true );
+	wp_enqueue_script( 'classie', get_template_directory_uri() . '/js/classie.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'iamtapps-global', get_template_directory_uri() . '/js/global.js', array(), '1.2.3', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
