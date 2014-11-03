@@ -69,21 +69,21 @@ a img { border: 0; }
 --------------------------------------------------------------*/
 body, button, input, select, textarea { color: #404040; font-family: "News Cycle", sans-serif; font-size: 16px; font-size: 1.6rem; line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Love Ya Like A Sister", cursive; }
+h1, h2, h3, h4, h5, h6 { clear: both; }
 
-h1 { font-size: 4.0em; }
+h1 { font-size: 4.0em; font-family: "Love Ya Like A Sister", cursive; }
 h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); margin-top: 1em; }
 
-h2 { font-size: 3.0em; }
+h2 { font-size: 3.0em; font-family: "Love Ya Like A Sister", cursive; }
 h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -30px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); }
 
-h3 { font-size: 2.0em; }
+h3 { font-size: 2.0em; font-weight: 700; }
 
-h4 { font-size: 1.5em; }
+h4 { font-size: 1.5em; font-weight: 700; }
 
-h5 { font-size: 1.4em; }
+h5 { font-size: 1.4em; font-weight: 700; }
 
-h6 { font-size: 1.1em; }
+h6 { font-size: 1.1em; font-weight: 700; }
 
 p { margin-bottom: 1.5em; }
 
@@ -911,9 +911,14 @@ a:hover, a:focus, a:active { color: midnightblue; }
 
 .home-intro { margin-top: 5em; }
 
-#skrollr-body { height: 2000px; position: relative; z-index: -1; }
+#what-i-do { width: 85%; margin: 10px auto 60px auto; display: flex; align-items: top; justify-content: center; }
+#what-i-do .catbox { width: 15%; float: left; margin: 50px 0.5%; padding: 5px; flex: 1; background: rgba(255, 255, 255, 0.4); padding: 10px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }
+#what-i-do .catbox .iconic { width: 50px; height: 50px; max-width: 80%; }
+#what-i-do .catbox p { text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.3); }
+
+#skrollr-body { height: 1000px; position: relative; z-index: -1; margin-top: 200px; display: block; clear: both; }
 #skrollr-body svg { width: 356px; height: 202px; position: fixed; bottom: 2%; right: 5%; }
-#skrollr-body path { stroke-dasharray: 1000; fill: none; stroke-width: 2; stroke: rgba(0, 0, 0, 0.6); }
+#skrollr-body path { stroke-dasharray: 2000; fill: none; stroke-width: 2; stroke: rgba(0, 0, 0, 0.6); }
 
 /*--------------------------------------------------------------
 10.2 Asides

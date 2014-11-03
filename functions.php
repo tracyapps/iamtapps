@@ -81,6 +81,7 @@ function iamtapps_scripts() {
 
 	wp_enqueue_script( 'iamtapps-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'iamtapps-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'iconic', get_template_directory_uri() . '/js/iconic.min.js', array(), '0.4.0', false );
 	wp_enqueue_script( 'blast', get_template_directory_uri() . '/js/jquery.blast.min.js', array( 'jquery' ), '1.1.0', false );
 	wp_enqueue_script( 'velocity', get_template_directory_uri() . '/js/velocity.min.js', array(), '1.1.0', false );
 	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array(), '0.6.27', true );
