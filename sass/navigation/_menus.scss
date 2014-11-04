@@ -1,6 +1,16 @@
 #stickyHeader {
-	position: fixed; top:-95px; height: 94px; width: 100%; z-index:1000; overflow: hidden; background: rgba(10, 10, 10, 0.85); padding: 40px 20px;
-	#stickyHeaderContent {height:85px; width:100%; }
+	position: fixed;
+	top:-95px;
+	height: 94px;
+	width: 100%;
+	z-index:1000;
+	overflow: hidden;
+	background: rgba(10, 10, 10, 0.85);
+	padding: 40px 20px;
+	#stickyHeaderContent {
+		height:85px;
+		width:100%;
+	}
 }
 .main-navigation {
 	clear: both;
