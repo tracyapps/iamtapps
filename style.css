@@ -916,10 +916,13 @@ a:hover, a:focus, a:active { color: midnightblue; }
 
 .home #primary { margin-top: 5em; }
 
-.scroll-down-arrows { padding: 60px 0 0 0; }
-
 .scroll-down { margin: 0px auto; display: block; }
-.scroll-down * { fill: none; stroke: rgba(255, 255, 255, 0); -webkit-animation: slowBlink 5s linear infinite; -moz-animation: slowBlink 5s linear infinite; animation: slowBlink 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
+
+.scroll-down-arrows-intro { padding: 60px 0 0 0; }
+.scroll-down-arrows-intro .scroll-down * { fill: none; stroke: rgba(255, 255, 255, 0); -webkit-animation: slowBlink 5s linear infinite; -moz-animation: slowBlink 5s linear infinite; animation: slowBlink 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
+
+.scroll-down-arrows-bio { padding: 50px 0 0 0; }
+.scroll-down-arrows-bio .scroll-down * { fill: none; stroke: transparent; -webkit-animation: slowBlinkGrey 5s linear infinite; -moz-animation: slowBlinkGrey 5s linear infinite; animation: slowBlinkGrey 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
 
 .scroll-down1 * { -webkit-animation-delay: 300ms; -moz-animation-delay: 300ms; animation-delay: 300ms; }
 
@@ -943,11 +946,23 @@ a:hover, a:focus, a:active { color: midnightblue; }
   60% { stroke: rgba(255, 255, 255, 0); }
   80% { stroke: rgba(255, 255, 255, 0.5); }
   100% { stroke: rgba(255, 255, 255, 0); } }
+@-webkit-keyframes slowBlinkGrey { 0% { stroke: transparent; }
+  60% { stroke: transparent; }
+  80% { stroke: rgba(0, 0, 0, 0.5); }
+  100% { stroke: transparent; } }
+@-moz-keyframes slowBlinkGrey { 0% { stroke: transparent; }
+  60% { stroke: transparent; }
+  80% { stroke: rgba(0, 0, 0, 0.5); }
+  100% { stroke: transparent; } }
+@keyframes slowBlinkGrey { 0% { stroke: transparent; }
+  60% { stroke: transparent; }
+  80% { stroke: rgba(0, 0, 0, 0.5); }
+  100% { stroke: transparent; } }
 #iamtapps-intro { height: 100%; width: 100%; position: fixed; top: 0px; background: #f5f4f2 url("/wp-content/themes/iamtapps/images/tappsBG_sm.jpg") no-repeat; background-position: right bottom; background-size: contain; }
 #iamtapps-intro .sk-container { padding: 150px 300px 100px 20px; display: inline-flex; height: 100%; width: 100%; }
 #iamtapps-intro .sk-container .sk-content { max-width: 500px; margin: auto auto; }
 
-.category-boxes { margin-top: 900px; padding-top: 10px; }
+.category-boxes { margin-top: 850px; padding-top: 10px; }
 
 #what-i-do { width: 85%; margin: 10px auto 60px auto; display: flex; align-items: top; justify-content: center; }
 #what-i-do .catbox { width: 15%; float: left; margin: 10px 0.5%; padding: 10px; flex: 1; background: rgba(255, 255, 255, 0.4); -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }

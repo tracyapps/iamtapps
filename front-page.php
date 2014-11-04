@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="scroll-down-arrows">
+			<div class="scroll-down-arrows-intro">
 				<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down1" alt="chevron" />
 				<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down2" alt="chevron" />
 				<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down3" alt="chevron" />
@@ -22,10 +22,17 @@ get_header(); ?>
 					data-200-start="opacity: 0"
 					data-250-start="opacity: 1"
 					data-800-start="opacity: 1"
-					data-900-start="opacity: 0">
+					data-870-start="opacity: 0">
 					<div class="sk-container">
 						<div class="sk-content">
 							<?php echo the_content(); ?>
+							<div class="scroll-down-arrows-bio">
+								<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down1" alt="chevron" />
+								<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down2" alt="chevron" />
+								<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down3" alt="chevron" />
+								<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down4" alt="chevron" />
+								<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down5" alt="chevron" />
+							</div>
 						</div>
 					</div>
 				</div>
