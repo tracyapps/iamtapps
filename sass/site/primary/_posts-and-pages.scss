@@ -31,10 +31,10 @@
 }
 .bcg {
 	background-repeat: no-repeat;
-	background-size: auto 600px;
 }
 .section.with-bg {
 	height: 700px;
+	background-size: auto 600px;
 }
 
 //homepage
@@ -43,13 +43,67 @@
 		margin-top: 5em;
 	}
 }
-.home-intro {
-	margin-top: 5em; padding-top:100px;
+.scroll-down-arrows {
+	padding: 60px 0 0 0;
+}
+.scroll-down {
+	margin: 0px auto;
+	display: block;
+	* {
+		fill: none;
+		stroke: rgba(255,255,255,0);
+		@include animation( slowBlink 5s linear infinite );
+		@include animation-delay(6s);
+	}
+}
+.scroll-down1 * {@include animation-delay(300ms);}
+.scroll-down2 * {@include animation-delay(350ms);}
+.scroll-down3 * {@include animation-delay(400ms);}
+.scroll-down4 * {@include animation-delay(450ms);}
+.scroll-down5 * {@include animation-delay(500ms);}
+
+@-webkit-keyframes slowBlink {
+	0% {stroke: rgba(255, 255, 255, 0);}
+	60% {stroke: rgba(255, 255, 255, 0);}
+	80% {stroke: rgba(255, 255, 255, 0.5);}
+	100% {stroke: rgba(255, 255, 255, 0);}
+}
+@-moz-keyframes slowBlink {
+	0% {stroke: rgba(255, 255, 255, 0);}
+	60% {stroke: rgba(255, 255, 255, 0);}
+	80% {stroke: rgba(255, 255, 255, 0.5);}
+	100% {stroke: rgba(255, 255, 255, 0);}
+}
+@keyframes slowBlink {
+	0% {stroke: rgba(255, 255, 255, 0);}
+	60% {stroke: rgba(255, 255, 255, 0);}
+	80% {stroke: rgba(255, 255, 255, 0.5);}
+	100% {stroke: rgba(255, 255, 255, 0);}
+}
+#iamtapps-intro {
+	height:100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background: $offwhite url('/wp-content/themes/iamtapps/images/tappsBG_sm.jpg') no-repeat;
+	background-position: right bottom;
+	background-size: contain;
+	.sk-container {
+		padding: 100px 300px 100px 20px;
+		.sk-content {
+			max-width: 500px;
+			margin: auto;
+		}
+	}
+}
+
+.category-boxes {
+	margin-top: 900px; padding-top:10px;
 }
 #what-i-do {
 	width: 85%;
-	margin: 150px auto 60px auto;
-	display: flex !important;
+	margin: 10px auto 60px auto;
+	display: flex;
 	align-items: top;
 	justify-content: center;
 	.catbox {
@@ -82,7 +136,7 @@
 
 
 #skrollr-body {
-	height: 1000px; position: relative; z-index: -1; margin-top:2000px; display: block; clear:both;
+	height: 1000px; position: relative; z-index: -1; display: block; clear:both;
 	svg {width:356px; height:202px; position: fixed; bottom: 2%; right: 5%;}
 	path {stroke-dasharray:2000; fill:none; stroke-width:2; stroke:rgba(0, 0, 0, 0.6);}
 }
