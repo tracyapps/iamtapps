@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1 {font-size: 4.0em; font-family: $font__titles;
-	&.site-title {font-size: 6em; color: $white; @include text-shadow; margin: 10px auto 20px auto; }
+	&.site-title {font-size: 6em; color: $white; @include text-shadow; margin: 20px auto 30px auto; }
 	&.site-title-smaller {font-size:1.2em;
 		a, a:visited {color: $white; text-decoration: none;}
 	}
