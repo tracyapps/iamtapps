@@ -213,7 +213,7 @@ add_action( 'widgets_init', 'iamtapps_widgets_init' );
  */
 
 if ( function_exists( 'add_image_size' ) ) { 
-    add_image_size( 'section-bg-image', 1700, 850, true ); //(cropped)
+    add_image_size( 'section-bg-image', 1600, 950, true ); //(cropped)
     add_image_size( 'portfolio-thumbnail', 450, 450, true ); //(cropped)
     add_image_size( 'page-header', 2000, 190, true ); //(cropped)
 
