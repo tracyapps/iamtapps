@@ -924,15 +924,11 @@ a:hover, a:focus, a:active { color: midnightblue; }
 .scroll-down-arrows-bio { padding: 50px 0 0 0; }
 .scroll-down-arrows-bio .scroll-down * { fill: none; stroke: transparent; -webkit-animation: slowBlinkGrey 5s linear infinite; -moz-animation: slowBlinkGrey 5s linear infinite; animation: slowBlinkGrey 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
 
-.scroll-down1 * { -webkit-animation-delay: 300ms; -moz-animation-delay: 300ms; animation-delay: 300ms; }
-
-.scroll-down2 * { -webkit-animation-delay: 350ms; -moz-animation-delay: 350ms; animation-delay: 350ms; }
-
-.scroll-down3 * { -webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms; }
-
-.scroll-down4 * { -webkit-animation-delay: 450ms; -moz-animation-delay: 450ms; animation-delay: 450ms; }
-
-.scroll-down5 * { -webkit-animation-delay: 500ms; -moz-animation-delay: 500ms; animation-delay: 500ms; }
+.scroll-down-arrows-intro .scroll-down1 *, .scroll-down-arrows-bio .scroll-down1 * { -webkit-animation-delay: 300ms; -moz-animation-delay: 300ms; animation-delay: 300ms; }
+.scroll-down-arrows-intro .scroll-down2 *, .scroll-down-arrows-bio .scroll-down2 * { -webkit-animation-delay: 350ms; -moz-animation-delay: 350ms; animation-delay: 350ms; }
+.scroll-down-arrows-intro .scroll-down3 *, .scroll-down-arrows-bio .scroll-down3 * { -webkit-animation-delay: 400ms; -moz-animation-delay: 400ms; animation-delay: 400ms; }
+.scroll-down-arrows-intro .scroll-down4 *, .scroll-down-arrows-bio .scroll-down4 * { -webkit-animation-delay: 450ms; -moz-animation-delay: 450ms; animation-delay: 450ms; }
+.scroll-down-arrows-intro .scroll-down5 *, .scroll-down-arrows-bio .scroll-down5 * { -webkit-animation-delay: 500ms; -moz-animation-delay: 500ms; animation-delay: 500ms; }
 
 @-webkit-keyframes slowBlink { 0% { stroke: rgba(255, 255, 255, 0); }
   60% { stroke: rgba(255, 255, 255, 0); }

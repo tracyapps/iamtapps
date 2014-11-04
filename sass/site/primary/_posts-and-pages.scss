@@ -66,11 +66,15 @@
 	}
 }
 
-.scroll-down1 * {@include animation-delay(300ms);}
-.scroll-down2 * {@include animation-delay(350ms);}
-.scroll-down3 * {@include animation-delay(400ms);}
-.scroll-down4 * {@include animation-delay(450ms);}
-.scroll-down5 * {@include animation-delay(500ms);}
+.scroll-down-arrows-intro,
+.scroll-down-arrows-bio {
+	.scroll-down1 * {@include animation-delay(300ms);}
+	.scroll-down2 * {@include animation-delay(350ms);}
+	.scroll-down3 * {@include animation-delay(400ms);}
+	.scroll-down4 * {@include animation-delay(450ms);}
+	.scroll-down5 * {@include animation-delay(500ms);}
+}
+
 
 @-webkit-keyframes slowBlink {
 	0% {stroke: rgba(255, 255, 255, 0);}
