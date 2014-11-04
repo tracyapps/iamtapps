@@ -5,23 +5,7 @@ body {
 	background: purple; height: 100%; width: 100%;
 	@include animation( backgroundColor 300s linear infinite );
 }
-@-webkit-keyframes backgroundColor {
-	0% {background: #d10606;}
-	20% {background: #ffff00;}
-	40% {background: #00ffff;}
-	60% {background: #2466df;}
-	80% {background: #6f24e0;}
-	100% {background: #d10606;}
-}
-@-moz-keyframes backgroundColor {
-	0% {background: #d10606;}
-	20% {background: #ffff00;}
-	40% {background: #00ffff;}
-	60% {background: #2466df;}
-	80% {background: #6f24e0;}
-	100% {background: #d10606;}
-}
-@keyframes backgroundColor {
+@include keyframes(backgroundColor) {
 	0% {background: #d10606;}
 	20% {background: #ffff00;}
 	40% {background: #00ffff;}

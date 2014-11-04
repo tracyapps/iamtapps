@@ -75,43 +75,19 @@
 	.scroll-down5 * {@include animation-delay(500ms);}
 }
 
+@include keyframes(slowBlink) {
+	0% {stroke: rgba(255, 255, 255, 0);}
+	60% {stroke: rgba(255, 255, 255, 0);}
+	80% {stroke: rgba(255, 255, 255, 0.5);}
+	100% {stroke: rgba(255, 255, 255, 0);}
+}
+@include keyframes(slowBlinkGrey) {
+	0% {stroke: rgba(0, 0, 0, 0);}
+	60% {stroke: rgba(0, 0, 0, 0);}
+	80% {stroke: rgba(0, 0, 0, 0.5);}
+	100% {stroke: rgba(0, 0, 0, 0);}
+}
 
-@-webkit-keyframes slowBlink {
-	0% {stroke: rgba(255, 255, 255, 0);}
-	60% {stroke: rgba(255, 255, 255, 0);}
-	80% {stroke: rgba(255, 255, 255, 0.5);}
-	100% {stroke: rgba(255, 255, 255, 0);}
-}
-@-moz-keyframes slowBlink {
-	0% {stroke: rgba(255, 255, 255, 0);}
-	60% {stroke: rgba(255, 255, 255, 0);}
-	80% {stroke: rgba(255, 255, 255, 0.5);}
-	100% {stroke: rgba(255, 255, 255, 0);}
-}
-@keyframes slowBlink {
-	0% {stroke: rgba(255, 255, 255, 0);}
-	60% {stroke: rgba(255, 255, 255, 0);}
-	80% {stroke: rgba(255, 255, 255, 0.5);}
-	100% {stroke: rgba(255, 255, 255, 0);}
-}
-@-webkit-keyframes slowBlinkGrey {
-	0% {stroke: rgba(0, 0, 0, 0);}
-	60% {stroke: rgba(0, 0, 0, 0);}
-	80% {stroke: rgba(0, 0, 0, 0.5);}
-	100% {stroke: rgba(0, 0, 0, 0);}
-}
-@-moz-keyframes slowBlinkGrey {
-	0% {stroke: rgba(0, 0, 0, 0);}
-	60% {stroke: rgba(0, 0, 0, 0);}
-	80% {stroke: rgba(0, 0, 0, 0.5);}
-	100% {stroke: rgba(0, 0, 0, 0);}
-}
-@keyframes slowBlinkGrey {
-	0% {stroke: rgba(0, 0, 0, 0);}
-	60% {stroke: rgba(0, 0, 0, 0);}
-	80% {stroke: rgba(0, 0, 0, 0.5);}
-	100% {stroke: rgba(0, 0, 0, 0);}
-}
 #iamtapps-intro {
 	height:100%;
 	width: 100%;
