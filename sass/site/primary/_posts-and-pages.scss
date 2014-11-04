@@ -89,10 +89,13 @@
 	background-position: right bottom;
 	background-size: contain;
 	.sk-container {
-		padding: 100px 300px 100px 20px;
+		padding: 150px 300px 100px 20px;
+		display: inline-flex;
+		height: 100%;
+		width: 100%;
 		.sk-content {
 			max-width: 500px;
-			margin: auto;
+			margin: auto auto;
 		}
 	}
 }

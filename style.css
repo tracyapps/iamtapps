@@ -944,8 +944,8 @@ a:hover, a:focus, a:active { color: midnightblue; }
   80% { stroke: rgba(255, 255, 255, 0.5); }
   100% { stroke: rgba(255, 255, 255, 0); } }
 #iamtapps-intro { height: 100%; width: 100%; position: fixed; top: 0px; background: #f5f4f2 url("/wp-content/themes/iamtapps/images/tappsBG_sm.jpg") no-repeat; background-position: right bottom; background-size: contain; }
-#iamtapps-intro .sk-container { padding: 100px 300px 100px 20px; }
-#iamtapps-intro .sk-container .sk-content { max-width: 500px; margin: auto; }
+#iamtapps-intro .sk-container { padding: 150px 300px 100px 20px; display: inline-flex; height: 100%; width: 100%; }
+#iamtapps-intro .sk-container .sk-content { max-width: 500px; margin: auto auto; }
 
 .category-boxes { margin-top: 900px; padding-top: 10px; }
 
