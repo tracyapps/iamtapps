@@ -39,16 +39,6 @@
 		delay: 150
 	});
 
-	$(function() {
-		var bar = $('#stickyHeader');
-		var top = bar.css('top');
-		$(window).scroll(function() {
-			if($(this).scrollTop() > 95) {
-				bar.stop().animate({'top' : '0px'}, 400);
-			} else {
-				bar.stop().animate({'top' : top}, 400);
-			}
-		});
-	});
+	$(".flexnav").flexNav();
 
 })( jQuery );

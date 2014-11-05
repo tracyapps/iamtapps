@@ -2,13 +2,13 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h1 {font-size: 4.0em; font-family: $font__titles;
-	&.site-title {font-size: 6em; color: $white; @include text-shadow; margin: 45px auto 30px auto; }
+	&.site-title {font-size: 6em; color: $white; @include text-shadow; margin: 3em auto 0px auto; line-height:1em; }
 	&.site-title-smaller {font-size:1.2em;
 		a, a:visited {color: $white; text-decoration: none;}
 	}
 }
 h2 {font-size: 3.0em; font-family: $font__titles;
-	&.site-description {font: 1.4em/1em $font__main; margin: -30px 0px 0px -10px; color: rgba($white, 0.65); @include transition( color 0.5s ease );}
+	&.site-description {font: 1.4em/1em $font__main; margin: -10px 0px 0px -10px; color: rgba($white, 0.65); @include transition( color 0.5s ease );}
 }
 h3 {font-size: 2.0em; font-weight: 700}
 h4 {font-size: 1.5em; font-weight: 700}

@@ -91,16 +91,16 @@
 #iamtapps-intro {
 	height:100%;
 	width: 100%;
-	position: fixed;
 	top: 0px;
 	background: $offwhite url('/wp-content/themes/iamtapps/images/tappsBG_sm.jpg') no-repeat;
 	background-position: right bottom;
 	background-size: contain;
 	.sk-container {
-		padding: 150px 300px 100px 20px;
+		padding: 110px 20% 20px 20px;
 		display: inline-flex;
 		height: 100%;
 		width: 100%;
+		overflow: scroll;
 		.sk-content {
 			max-width: 500px;
 			margin: auto auto;

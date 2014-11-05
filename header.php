@@ -31,16 +31,12 @@
 	<rect width='300' height='300' filter="url(#n)" opacity='0.2'/>
 </svg>
 <div id="page" class="hfeed site clearfix">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'iamtapps' ); ?></a>
-	<div id="stickyHeader">
-		<div id="stickyHeaderContent" class="grid wider">
-			<h1 class="site-title-smaller"><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Primary Menu', 'iamtapps' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #site-navigation -->
-		</div><!--/stickyHeaderContent-->
-	</div><!--/stickyHeader-->
+	<div class="navBG">
+		<nav id="site-navigation" data-breakpoint="800" class="flexnav one-page main-nav" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'grid wrap' ) ); ?>
+		</nav><!-- #site-navigation -->
+	</div>
+
 	<header id="masthead" class="site-header grid wider" role="banner">
 		<div class="site-branding unit whole textcenter">
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
