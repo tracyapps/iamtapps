@@ -75,7 +75,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 						</div>
 					</div>
 				</div>
-				<div id="homepage-samples" class="section bg-color">
+				<div id="homepage-samples" class="section bg-color clearfix">
 					<div class="grid wrap">
 
 						<h3>some random samples</h3>

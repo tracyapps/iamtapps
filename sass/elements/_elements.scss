@@ -39,3 +39,10 @@ figure {
 
 @import "tables";
 @import "iconic";
+
+footer.site-footer {
+	background: rgba(0, 0, 0, 0.8);
+	padding: 20px 0px;
+	display: block;
+	clear: both;
+}

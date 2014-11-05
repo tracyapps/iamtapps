@@ -10,10 +10,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'iamtapps' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'iamtapps' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'iamtapps' ), 'iamtapps', '<a href="http://iamtapps.com" rel="designer">tracy apps</a>' ); ?>
+		<div class="site-info grid wrap">
+			&copy;<?php echo date( 'Y' ); ?> tracy lynn apps
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
