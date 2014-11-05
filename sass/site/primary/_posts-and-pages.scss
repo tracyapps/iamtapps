@@ -113,6 +113,20 @@
 		}
 	}
 }
+@media all and ( max-width: 800px ) {
+	#iamtapps-intro {
+		background-position: 115% 50%;
+	}
+}
+@media all and ( max-width: 700px ) {
+	#iamtapps-intro {
+		background-position: 120% 50%;
+		.sk-container {
+			padding: 90px 170px 20px 20px;
+		}
+	}
+}
+
 #iamtapps-intro-mobile-version {
 	margin: 4em 0;
 	width: 100%;
@@ -126,6 +140,12 @@
 	.content-container {
 		position: relative;
 		margin: auto auto;
+	}
+}
+@media all and ( max-width: 700px ) {
+	#iamtapps-intro-mobile-version {
+		background-position: 120% 100%;
+		padding: 20px 70px 10px 20px;
 	}
 }
 #page.desktop {
@@ -164,10 +184,26 @@
 
 @media all and ( max-width:740px ) {
 	#what-i-do { align-content: flex-start; flex-flow: row wrap; justify-content: space-around;
-		.catbox { width: 26%; flex: 1 26%;}
+		.catbox { width: 31%; flex: 1 31%;}
 	}
 }
 
+#page.phone,
+#page.tablet {
+	#what-i-do {
+		width: 95%;
+		margin: 0px auto;
+	}
+}
+@media all and ( max-width: 600px ) {
+	#page.phone {
+		#what-i-do {
+			.catbox {
+				width: 48%;
+			}
+		}
+	}
+}
 
 #skrollr-body {
 	height: 1000px; position: relative; z-index: -1; display: block; clear:both;
