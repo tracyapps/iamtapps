@@ -75,6 +75,30 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 						</div>
 					</div>
 				</div>
+				<div id="homepage-samples" class="section bg-color">
+					<div class="grid wrap">
+
+						<h3>some random samples</h3>
+						<?php $args = array(
+							'post_type' => 'portfolio',
+							'posts_per_page' => '8',
+							'orderby' => 'rand',
+						);
+						$query = new WP_Query( $args );
+						?>
+							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+								<div class="unit half example">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+											<?php the_post_thumbnail(); ?>
+										</a>
+									<?php endif; ?>
+									<h6><?php the_title(); ?></h6>
+								</div>
+							<?php endwhile; ?>
+						<?php wp_reset_query(); ?>
+					</div>
+				</div>
 			<?php endwhile; // end of the loop. ?>
 			<?php if ( $deviceType == 'desktop' ) { ?>
 			<div id="skrollr-body" class="clearfix">
