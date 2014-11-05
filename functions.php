@@ -70,11 +70,17 @@ function iamtapps_setup() {
 endif; // iamtapps_setup
 add_action( 'after_setup_theme', 'iamtapps_setup' );
 
-
+/**
+ * include mobile detect for conditional script loadin'
+ */
+require 'inc/Mobile_Detect.php';
 /**
  * Enqueue scripts and styles.
  */
 function iamtapps_scripts() {
+	$detect = new Mobile_Detect;
+	$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
+
 	wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=News+Cycle:400,700|Love+Ya+Like+A+Sister', '1.2.3', 'all' );
 	wp_enqueue_style( 'gridism', get_template_directory_uri() . '/css/gridism.css','1.0.0', 'all' );
 	wp_enqueue_style( 'flexnav', get_template_directory_uri() . '/css/flexnav.css','1.0.0', 'all' );
@@ -89,6 +95,9 @@ function iamtapps_scripts() {
 	wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array(), '0.6.27', true );
 	wp_enqueue_script( 'classie', get_template_directory_uri() . '/js/classie.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'iamtapps-global', get_template_directory_uri() . '/js/global.js', array(), '1.2.3', true );
+	if ( $deviceType == 'desktop' ) {
+		wp_enqueue_script( 'iamtapps-global-desktop', get_template_directory_uri() . '/js/global-desktop-only.js', array(), '1.2.4', true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

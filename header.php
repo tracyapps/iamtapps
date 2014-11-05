@@ -6,6 +6,10 @@
  *
  * @package iamtapps
  */
+require_once 'inc/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
+$scriptVersion = $detect->getScriptVersion();
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -30,13 +34,18 @@
 	<rect width='300' height='300' fill='rgba(0,0,0,0.7)'/>
 	<rect width='300' height='300' filter="url(#n)" opacity='0.2'/>
 </svg>
-<div id="page" class="hfeed site clearfix">
+<div id="page" class="hfeed site clearfix <?php if ( $deviceType == 'tablet' ) :
+	echo 'tablet';
+		elseif ( $deviceType == 'phone' ) :
+	echo 'phone';
+		else :
+	echo 'desktop';
+	endif;?>">
 	<div class="navBG">
 		<nav id="site-navigation" data-breakpoint="800" class="flexnav one-page main-nav" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'grid wrap' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</div>
-
 	<header id="masthead" class="site-header grid wider" role="banner">
 		<div class="site-branding unit whole textcenter">
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>

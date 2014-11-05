@@ -56,6 +56,9 @@
 		@include animation-delay(6s);
 	}
 }
+#page.phone {
+	.scroll-down-arrows-intro {padding-top: 5px;}
+}
 .scroll-down-arrows-bio {
 	padding: 50px 0 0 0;
 	.scroll-down * {
@@ -92,6 +95,8 @@
 	height:100%;
 	width: 100%;
 	top: 0px;
+	bottom: 0px;
+	left: 0px;
 	background: $offwhite url('/wp-content/themes/iamtapps/images/tappsBG_sm.jpg') no-repeat;
 	background-position: right bottom;
 	background-size: contain;
@@ -102,10 +107,18 @@
 		width: 100%;
 		overflow: scroll;
 		.sk-content {
+			position: relative;
 			max-width: 500px;
 			margin: auto auto;
 		}
 	}
+}
+#iamtapps-intro-mobile-version {
+	margin: 4em 0;
+	width: 100%;
+	min-height: 100%;
+	padding: 40px 20px;
+	background: $offwhite;
 }
 
 .category-boxes {
@@ -123,7 +136,7 @@
 		margin: 10px 0.5%;
 		padding: 10px;
 		flex: 1;
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, 0.5);
 		@include transition ( background 0.3s ease-in-out );
 		@include border-radius(4px);
 		.iconic {

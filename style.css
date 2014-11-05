@@ -72,12 +72,10 @@ body, button, input, select, textarea { color: #404040; font-family: "News Cycle
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
 h1 { font-size: 4.0em; font-family: "Love Ya Like A Sister", cursive; }
-h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); margin: 3em auto 0px auto; line-height: 1em; }
-h1.site-title-smaller { font-size: 1.2em; }
-h1.site-title-smaller a, h1.site-title-smaller a:visited { color: #fff; text-decoration: none; }
+h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); margin: 3em auto 0px auto; line-height: 0.9em; }
 
 h2 { font-size: 3.0em; font-family: "Love Ya Like A Sister", cursive; }
-h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -10px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); -webkit-transition: color 0.5s ease; -moz-transition: color 0.5s ease; transition: color 0.5s ease; }
+h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -5px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); -webkit-transition: color 0.5s ease; -moz-transition: color 0.5s ease; transition: color 0.5s ease; }
 
 h3 { font-size: 2.0em; font-weight: 700; }
 
@@ -86,6 +84,9 @@ h4 { font-size: 1.5em; font-weight: 700; }
 h5 { font-size: 1.4em; font-weight: 700; }
 
 h6 { font-size: 1.1em; font-weight: 700; }
+
+#page.phone h1.site-title { margin-top: 0.9em; }
+#page.phone h2.site-description { margin-top: 10px; }
 
 p { margin-bottom: 1.5em; }
 
@@ -828,13 +829,12 @@ a:hover, a:focus, a:active { color: midnightblue; }
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-.navBG { display: block; width: 100%; height: auto; overflow: hidden; }
-.navBG nav.flexnav { display: block; height: auto; max-height: inherit; width: 100%; max-width: 100%; background: rgba(0, 0, 0, 0.3); right: 0px; left: 0px; }
-
-#site-navigation.flexnav.one-page { display: block; top: 0px; left: 0px; z-index: 20000; width: 100%; }
-#site-navigation.flexnav.one-page li { background-color: transparent; }
-#site-navigation.flexnav.one-page li a { color: #fff; background: rgba(0, 0, 0, 0.2); border-left: 1px solid rgba(0, 0, 0, 0.3); }
-#site-navigation.flexnav.one-page li a:hover { background: rgba(0, 0, 0, 0.5); }
+#page.desktop .navBG { display: block; width: 100%; height: auto; overflow: hidden; }
+#page.desktop .navBG nav.flexnav { display: block; height: auto; max-height: inherit; width: 100%; max-width: 100%; background: rgba(0, 0, 0, 0.3); right: 0px; left: 0px; }
+#page.desktop #site-navigation.flexnav.one-page { display: block; top: 0px; left: 0px; z-index: 20000; width: 100%; }
+#page.desktop #site-navigation.flexnav.one-page li { background-color: transparent; }
+#page.desktop #site-navigation.flexnav.one-page li a { color: #fff; background: rgba(0, 0, 0, 0.2); border-left: 1px solid rgba(0, 0, 0, 0.3); }
+#page.desktop #site-navigation.flexnav.one-page li a:hover { background: rgba(0, 0, 0, 0.5); }
 
 .site-main .comment-navigation, .site-main .paging-navigation, .site-main .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
 
@@ -911,6 +911,8 @@ a:hover, a:focus, a:active { color: midnightblue; }
 .scroll-down-arrows-intro { padding: 60px 0 0 0; }
 .scroll-down-arrows-intro .scroll-down * { fill: none; stroke: rgba(255, 255, 255, 0); -webkit-animation: slowBlink 5s linear infinite; -moz-animation: slowBlink 5s linear infinite; animation: slowBlink 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
 
+#page.phone .scroll-down-arrows-intro { padding-top: 5px; }
+
 .scroll-down-arrows-bio { padding: 50px 0 0 0; }
 .scroll-down-arrows-bio .scroll-down * { fill: none; stroke: transparent; -webkit-animation: slowBlinkGrey 5s linear infinite; -moz-animation: slowBlinkGrey 5s linear infinite; animation: slowBlinkGrey 5s linear infinite; -webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s; }
 
@@ -944,14 +946,16 @@ a:hover, a:focus, a:active { color: midnightblue; }
   60% { stroke: transparent; }
   80% { stroke: rgba(0, 0, 0, 0.5); }
   100% { stroke: transparent; } }
-#iamtapps-intro { height: 100%; width: 100%; top: 0px; background: #f5f4f2 url("/wp-content/themes/iamtapps/images/tappsBG_sm.jpg") no-repeat; background-position: right bottom; background-size: contain; }
+#iamtapps-intro { height: 100%; width: 100%; top: 0px; bottom: 0px; left: 0px; background: #f5f4f2 url("/wp-content/themes/iamtapps/images/tappsBG_sm.jpg") no-repeat; background-position: right bottom; background-size: contain; }
 #iamtapps-intro .sk-container { padding: 110px 20% 20px 20px; display: inline-flex; height: 100%; width: 100%; overflow: scroll; }
-#iamtapps-intro .sk-container .sk-content { max-width: 500px; margin: auto auto; }
+#iamtapps-intro .sk-container .sk-content { position: relative; max-width: 500px; margin: auto auto; }
+
+#iamtapps-intro-mobile-version { margin: 4em 0; width: 100%; min-height: 100%; padding: 40px 20px; background: #f5f4f2; }
 
 .category-boxes { margin-top: 650px; padding-top: 10px; }
 
 #what-i-do { width: 85%; margin: 10px auto 60px auto; display: flex; align-items: top; justify-content: center; }
-#what-i-do .catbox { width: 15%; float: left; margin: 10px 0.5%; padding: 10px; flex: 1; background: rgba(255, 255, 255, 0.4); -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }
+#what-i-do .catbox { width: 15%; float: left; margin: 10px 0.5%; padding: 10px; flex: 1; background: rgba(255, 255, 255, 0.5); -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }
 #what-i-do .catbox .iconic { width: 50px; height: 50px; max-width: 80%; }
 #what-i-do .catbox p { text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.3); }
 #what-i-do .catbox:hover { background: rgba(255, 255, 255, 0.9); }

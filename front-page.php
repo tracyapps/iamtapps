@@ -5,7 +5,11 @@
  * @package iamtapps
  */
 
-get_header(); ?>
+get_header();
+require_once 'inc/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -17,6 +21,13 @@ get_header(); ?>
 				<img data-direction="bottom" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic-sm iconic scroll-down scroll-down5" alt="chevron" />
 			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
+			<?php if ( $deviceType == 'tablet' || $deviceType == 'phone' ) { ?>
+				<div id="iamtapps-intro-mobile-version">
+					<div class="content-container">
+						<?php echo the_content(); ?>
+					</div>
+				</div><!--/#iamtapps-intro-mobile-version-->
+			<?php } elseif ( $deviceType == 'desktop' ) { ?>
 				<div id="iamtapps-intro" class="bcg static-slide"
 					data-start="opacity: 0; position: fixed; height:100%"
 					data-200-start="opacity: 0"
@@ -36,12 +47,13 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div><!--/#iamtapps-intro-->
+			<?php } // end desktop code ?>
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'section-bg-image' ); ?>
 				<div class="bcg section with-bg category-boxes"
 					 style="background-image: url('<?php echo esc_url( $image[0] ); ?>')"
 					 data-bottom-top="background-position: 50% 0px;"
-					 data-top-bottom="background-position: 50% -400px;">
+					 data-top-bottom="background-position: 50% -600px;">
 
 					<div id="what-i-do" class="grid align-center">
 						<?php //start category list box thing
@@ -63,9 +75,8 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-
-
 			<?php endwhile; // end of the loop. ?>
+			<?php if ( $deviceType == 'desktop' ) { ?>
 			<div id="skrollr-body" class="clearfix">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="signature">
 					<path data-500-end="stroke-dashoffset:2000;"
@@ -81,13 +92,8 @@ get_header(); ?>
 						  data-50-end="stroke-dashoffset:0;"
 						  d="M311.337,29.794c3.67-5.242,5.242-12.057,0-16.251c-17.3-15.727-46.132,55.568-49.802,65.004c-5.242,13.106-12.057,28.309-13.105,42.463c-0.524,8.912-0.524,11.009,7.863,7.864 c6.291-2.098,13.106-13.631,16.251-17.824c8.912-11.533,16.251-24.115,23.066-37.221c6.815-13.106,13.106-27.26,20.445-40.89c-4.718,14.154-14.679,27.26-20.969,40.366c-4.194,8.912-22.018,41.938-12.058,50.326c7.339-2.097,11.009-11.009,17.3-15.202c-1.573,19.921-13.106,39.317-19.396,57.665c6.815-10.484,9.96-25.687,14.154-37.744c3.145-9.961,7.863-35.124,20.969-37.745c4.718,11.009-7.339,20.97-14.679,27.784c4.194-1.572,16.251-12.581,20.445-9.436c7.34,5.242-12.057,45.084-14.678,52.947c3.67-7.339,4.194-15.728,5.767-24.115c2.097-13.63,5.767-49.802,20.445-54.52c2.098,13.63-11.009,22.018-13.105,34.075c13.63-6.291,22.018-20.445,33.551-28.833c4.194,18.348-5.767,35.123-26.735,31.454" class="style0"/>
 				</svg>
-			</div>
-
-
-
-
-
-
+			</div><!--/#skrollr-body-->
+			<?php } // end if desktop ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

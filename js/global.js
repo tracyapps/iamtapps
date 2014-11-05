@@ -17,11 +17,6 @@
 	page.style.backgroundImage = url;
 	//end SVG background
 
-	//skrollr
-	skrollr.init({
-		forceHeight: false
-	});
-
 })();
 
 
