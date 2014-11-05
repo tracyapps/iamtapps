@@ -21,9 +21,9 @@ get_header(); ?>
 					data-start="opacity: 0; position: fixed; height:100%"
 					data-200-start="opacity: 0"
 					data-250-start="opacity: 1"
-					data-800-start="opacity: 1"
-					data-870-start="opacity: 0"
-					data-873-start="position: relative; height:0px">
+					data-700-start="opacity: 1"
+					data-770-start="opacity: 0"
+					data-773-start="position: relative; height:0px">
 					<div class="sk-container">
 						<div class="sk-content">
 							<?php echo the_content(); ?>
