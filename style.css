@@ -836,6 +836,13 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #page.desktop #site-navigation.flexnav.one-page li a { color: #fff; background: rgba(0, 0, 0, 0.2); border-left: 1px solid rgba(0, 0, 0, 0.3); }
 #page.desktop #site-navigation.flexnav.one-page li a:hover { background: rgba(0, 0, 0, 0.5); }
 
+#page.phone .menu-button.one-page, #page.tablet .menu-button.one-page { background: rgba(0, 0, 0, 0.4); color: #fff; }
+#page.phone .menu-button.one-page .touch-button, #page.tablet .menu-button.one-page .touch-button { padding: 17px 0px 0px 0px; }
+#page.phone .menu-button.one-page .iconic *, #page.tablet .menu-button.one-page .iconic * { fill: none; stroke: #fff; }
+#page.phone .menu-button.one-page.active, #page.tablet .menu-button.one-page.active { background: rgba(0, 0, 0, 0.7); }
+#page.phone .flexnav li a, #page.tablet .flexnav li a { color: #fff; background: rgba(0, 0, 0, 0.7); }
+#page.phone .flexnav li a:active, #page.tablet .flexnav li a:active { background: rgba(0, 0, 0, 0.8); }
+
 .site-main .comment-navigation, .site-main .paging-navigation, .site-main .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
 
 .comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous { float: left; width: 50%; }
@@ -950,9 +957,10 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #iamtapps-intro .sk-container { padding: 110px 20% 20px 20px; display: inline-flex; height: 100%; width: 100%; overflow: scroll; }
 #iamtapps-intro .sk-container .sk-content { position: relative; max-width: 500px; margin: auto auto; }
 
-#iamtapps-intro-mobile-version { margin: 4em 0; width: 100%; min-height: 100%; padding: 40px 20px; background: #f5f4f2; }
+#iamtapps-intro-mobile-version { margin: 4em 0; width: 100%; height: 100%; min-height: 450px; padding: 40px 180px 40px 20px; display: inline-flex; background: #f5f4f2 url("/wp-content/themes/iamtapps/images/tappsBG_sm.jpg") no-repeat; background-position: 110% 50%; background-size: 200px auto; }
+#iamtapps-intro-mobile-version .content-container { position: relative; margin: auto auto; }
 
-.category-boxes { margin-top: 650px; padding-top: 10px; }
+#page.desktop .category-boxes { margin-top: 650px; padding-top: 10px; }
 
 #what-i-do { width: 85%; margin: 10px auto 60px auto; display: flex; align-items: top; justify-content: center; }
 #what-i-do .catbox { width: 15%; float: left; margin: 10px 0.5%; padding: 10px; flex: 1; background: rgba(255, 255, 255, 0.5); -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }

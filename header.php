@@ -41,7 +41,9 @@ $scriptVersion = $detect->getScriptVersion();
 		else :
 	echo 'desktop';
 	endif;?>">
+
 	<div class="navBG">
+		<div class="menu-button one-page">Menu</div>
 		<nav id="site-navigation" data-breakpoint="800" class="flexnav one-page main-nav" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'grid wrap' ) ); ?>
 		</nav><!-- #site-navigation -->

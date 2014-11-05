@@ -33,7 +33,30 @@
 		}
 	}
 }
-
+#page.phone,
+#page.tablet {
+	.menu-button.one-page {
+		background: rgba(0, 0, 0, 0.4);
+		color: $white;
+		.touch-button {
+			padding: 17px 0px 0px 0px;
+		}
+		.iconic * {
+			fill: none;
+			stroke: $white;
+		}
+		&.active {background: rgba(0, 0, 0, 0.7);}
+	}
+	.flexnav {
+		li {
+			a {
+				color: $white;
+				background: rgba(0, 0, 0, 0.7);
+				&:active {background: rgba(0, 0, 0, 0.8);}
+			}
+		}
+	}
+}
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,

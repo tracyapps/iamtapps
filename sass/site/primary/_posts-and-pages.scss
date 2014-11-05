@@ -116,14 +116,24 @@
 #iamtapps-intro-mobile-version {
 	margin: 4em 0;
 	width: 100%;
-	min-height: 100%;
-	padding: 40px 20px;
-	background: $offwhite;
+	height: 100%;
+	min-height: 450px;
+	padding: 40px 180px 40px 20px;
+	display: inline-flex;
+	background: $offwhite url('/wp-content/themes/iamtapps/images/tappsBG_sm.jpg') no-repeat;
+	background-position: 110% 50%;
+	background-size: 200px auto;
+	.content-container {
+		position: relative;
+		margin: auto auto;
+	}
+}
+#page.desktop {
+	.category-boxes {
+		margin-top: 650px; padding-top:10px;
+	}
 }
 
-.category-boxes {
-	margin-top: 650px; padding-top:10px;
-}
 #what-i-do {
 	width: 85%;
 	margin: 10px auto 60px auto;
