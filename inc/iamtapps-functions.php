@@ -205,7 +205,7 @@ function iamtapps_widgets_init() {
 }
 add_action( 'widgets_init', 'iamtapps_widgets_init' );
 
-/*
+/**
  * adding more image sizes (slideshow, headers, thumbnails, etc)
  */
 
@@ -216,7 +216,7 @@ if ( function_exists( 'add_image_size' ) ) {
 
 }
 
-/*
+/**
  * gallery inline code fix
  */
 
@@ -225,3 +225,22 @@ add_filter( 'the_content', 'remove_br_gallery', 11, 2);
 function remove_br_gallery($output) {
     return preg_replace('/<br style=(.*)>/mi','',$output);
 }
+
+
+/**
+ * adding custom post types to category and tag query
+ *
+ * @param $query
+ * @return mixed
+ */
+function add_custom_types_to_tax( $query ) {
+	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+
+// Get all your post types
+		$post_types = get_post_types();
+
+		$query->set( 'post_type', $post_types );
+		return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );

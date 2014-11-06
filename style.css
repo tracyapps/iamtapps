@@ -1016,9 +1016,9 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #page.phone #homepage-samples .grid .example p, #page.tablet #homepage-samples .grid .example p { opacity: 1; }
 
 /** -------------------- Page  ------------------ */
-header.entry-header { color: #fff; padding: 130px 0px 10px 0px; margin: 0; height: 245px; }
-header.entry-header.has-featured-image { background-size: auto 190px; background-position: center 55px; background-repeat: no-repeat; }
-header.entry-header h1.entry-title { margin-top: 1em; display: inline; background: rgba(0, 0, 0, 0.7); padding: 3px 5px 2px 5px; margin-left: 10px; box-shadow: 10px 0 0 rgba(0, 0, 0, 0.7), -10px 0 0 rgba(0, 0, 0, 0.7); }
+header.entry-header, header.page-header, header.post-header { color: #fff; padding: 130px 0px 10px 0px; margin: 0; height: 245px; }
+header.entry-header.has-featured-image, header.page-header.has-featured-image, header.post-header.has-featured-image { background-size: auto 190px; background-position: center 55px; background-repeat: no-repeat; }
+header.entry-header h1.entry-title, header.entry-header h1.page-title, header.page-header h1.entry-title, header.page-header h1.page-title, header.post-header h1.entry-title, header.post-header h1.page-title { margin-top: 1em; display: inline; background: rgba(0, 0, 0, 0.7); padding: 3px 5px 2px 5px; margin-left: 10px; box-shadow: 10px 0 0 rgba(0, 0, 0, 0.7), -10px 0 0 rgba(0, 0, 0, 0.7); }
 
 .entry-content.light-bg { padding: 40px 30px; background: rgba(255, 255, 255, 0.8); margin-top: -25px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 0px 4px 4px 4px; border-radius: 0px 4px 4px 4px; }
 

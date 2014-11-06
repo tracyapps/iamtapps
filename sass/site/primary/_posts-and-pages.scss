@@ -371,7 +371,9 @@
  *  -------------------- Page  ------------------
  */
 
-header.entry-header {
+header.entry-header,
+header.page-header,
+header.post-header {
 	color: $white;
 	padding: 130px 0px 10px 0px;
 	margin: 0;
@@ -381,7 +383,8 @@ header.entry-header {
 		background-position: center 55px;
 		background-repeat: no-repeat;
 	}
-	h1.entry-title {
+	h1.entry-title,
+	h1.page-title {
 		margin-top: 1em;
 		display: inline;
 		background: rgba(0, 0, 0, 0.7);
