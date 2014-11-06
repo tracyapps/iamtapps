@@ -48,11 +48,12 @@ $scriptVersion = $detect->getScriptVersion();
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'grid wrap' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</div>
+	<?php if ( is_front_page() ) : ?>
 	<header id="masthead" class="site-header grid wider" role="banner">
 		<div class="site-branding unit whole textcenter">
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 			<h2 class="site-description animatein"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 	</header><!-- #masthead -->
-
+	<?php endif; ?>
 	<div id="content" class="site-content">
