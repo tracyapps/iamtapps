@@ -86,15 +86,18 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 						);
 						$query = new WP_Query( $args );
 						?>
-							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-								<div class="unit half example">
+							<?php while ( $query->have_posts() ) : $query->the_post();
+								?>
+								<figure class="example" >
 									<?php if ( has_post_thumbnail() ) : ?>
-										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-											<?php the_post_thumbnail(); ?>
-										</a>
+										<?php the_post_thumbnail( 'portfolio-thumbnail' ); ?>
 									<?php endif; ?>
-									<h6><?php the_title(); ?></h6>
-								</div>
+									<figcaption>
+										<h6><?php the_title(); ?></h6>
+										<p><?php echo esc_html( excerpt(20), 'iamtapps' ); ?></p>
+										<a href="<?php the_permalink(); ?>">Read More</a>
+									</figcaption>
+								</figure>
 							<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
 					</div>

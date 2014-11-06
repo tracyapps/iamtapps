@@ -50,4 +50,10 @@
 
 	$(".flexnav").flexNav();
 
+	// example boxes, making sure the height equals the width
+	var cw = $('.example').width();
+	$('.example').css({
+		'height': cw + 'px'
+	});
+
 })( jQuery );

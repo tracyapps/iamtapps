@@ -158,9 +158,6 @@ function excerpt($limit) {
   if (count($excerpt)>=$limit) {
     array_pop($excerpt);
     $excerpt = implode(" ",$excerpt).'... ';
-    $excerpt .= '<a class="readmore" href="';
-    $excerpt .= get_permalink();
-    $excerpt .= '">Continue reading&nbsp;&raquo;</a>';
   } else {
     $excerpt = implode(" ",$excerpt);
   }
@@ -214,7 +211,7 @@ add_action( 'widgets_init', 'iamtapps_widgets_init' );
 
 if ( function_exists( 'add_image_size' ) ) { 
     add_image_size( 'section-bg-image', 1600, 950, true ); //(cropped)
-    add_image_size( 'portfolio-thumbnail', 450, 450, true ); //(cropped)
+    add_image_size( 'portfolio-thumbnail', 550, 550, true ); //(cropped)
     add_image_size( 'page-header', 2000, 190, true ); //(cropped)
 
 }
