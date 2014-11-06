@@ -68,7 +68,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 								$the_category = get_category( $cat_id, 'category' );
 								$the_category_icon = get_tax_meta( $cat_id, 'tm_category-icon' );
 								$the_category_icon_path = get_template_directory_uri() .'/images/iconic/svg/smart/';
-								echo '<div class="catbox" data-start="opacity: 0" data-center-top="opacity: 1" data-top="opacity:1" data-top-bottom="opacity:0" data-anchor-target="#what-i-do .catbox"><img class="iconic" data-src="' . $the_category_icon_path . $the_category_icon . '.svg" /><h6><a href="' . $the_category->slug . '">' . $the_category->name . '</a></h6><p>' . $the_category->category_description . '</p></div>';
+								echo '<div class="catbox" data-start="opacity: 0" data-center-top="opacity: 1" data-top="opacity:1" data-top-bottom="opacity:0" data-anchor-target="#what-i-do .catbox"><img class="iconic" data-src="' . $the_category_icon_path . $the_category_icon . '.svg" /><h6><a href="' . $the_category->slug . '">' . $the_category->name . '</a></h6><p>' . $the_category->category_description . '</p><a href="' . $the_category->slug . '" class="button full">More<img data-direction="right" data-src="' . $the_category_icon_path . 'chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></div>';
 
 							endforeach;
 						?>
@@ -94,7 +94,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 									<?php endif; ?>
 									<figcaption>
 										<h6><?php the_title(); ?></h6>
-										<p><?php echo esc_html( excerpt(20), 'iamtapps' ); ?></p>
+										<p><?php echo esc_html( excerpt(20), 'iamtapps' ); ?> <a href="<?php the_permalink(); ?>" class="button">More<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></p>
 										<a href="<?php the_permalink(); ?>">Read More</a>
 									</figcaption>
 								</figure>
