@@ -36,13 +36,14 @@
 							<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" />
 						</a>
 					</p>
-
-					<?php
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . __( 'Pages:', 'iamtapps' ),
-						'after'  => '</div>',
-					) );
-					?>
+					<?php if ( is_post_type_archive( 'portfolio' ) ) {
+						$category = get_the_category(); ?>
+					<div class="example-category <?php esc_html_e( $category[0]->slug , 'iamtapps' ); ?>">
+						<a href="<?php echo esc_url( get_category_link( $category[0]->term_id ), 'iamtapps' ); ?>">
+						<img class="iconic iconic-md" data-src="<?php echo get_template_directory_uri() . '/images/iconic/svg/smart/' . get_tax_meta( $category[0]->cat_ID, 'tm_category-icon' ) ; ?>.svg" />
+						</a>
+					</div>
+					<?php } ?>
 				</div><!-- .post-content -->
 				<footer class="post-footer">
 					<?php iamtapps_entry_footer(); ?>

@@ -465,9 +465,15 @@ h1 svg {
 	article.grid.wrap {
 		margin: 15px auto;
 		clear:both;
+		position: relative;
 	}
 }
-
+.example-category {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	.iconic-tag {position: absolute; bottom: 0px; right: 0px; z-index: 1;width: 100px; height: 100px;}
+}
 .taxonomy-description {
 	display: block;
 	margin: 195px 0 20px 0;

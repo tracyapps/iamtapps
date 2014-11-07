@@ -1043,7 +1043,10 @@ header.entry-header h1.entry-title.long-title, header.entry-header h1.page-title
 /** -------------------- Archive pages ------------------ */
 h1 svg { margin-right: 28px; }
 
-.archive article, .archive article.grid.wrap { margin: 15px auto; clear: both; }
+.archive article, .archive article.grid.wrap { margin: 15px auto; clear: both; position: relative; }
+
+.example-category { position: absolute; bottom: 10px; right: 10px; }
+.example-category .iconic-tag { position: absolute; bottom: 0px; right: 0px; z-index: 1; width: 100px; height: 100px; }
 
 .taxonomy-description { display: block; margin: 195px 0 20px 0; background: rgba(0, 0, 0, 0.5); padding: 5px 20px; }
 .taxonomy-description p { margin: 0; padding: 0; }
