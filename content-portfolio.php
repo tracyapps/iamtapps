@@ -15,10 +15,6 @@
 			<h1 class="entry-title<?php echo ( strlen( get_the_title() ) > 30 ) ? ' long-title' : '' ?>">
 				<?php esc_html_e( get_the_title(), 'iamtapps' ); ?>
 			</h1>
-
-			<div class="entry-meta">
-				<?php iamtapps_posted_on(); ?>
-			</div><!-- .entry-meta -->
 		</div><!--/.grid-->
 	</header><!-- .entry-header -->
 

@@ -1018,7 +1018,7 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #page.phone #homepage-samples .grid .example p, #page.tablet #homepage-samples .grid .example p { opacity: 1; }
 
 /** -------------------- Page ------------------ */
-header.entry-header, header.page-header, header.post-header { color: #fff; padding: 50px 0px 10px 0px; margin: 0; height: 245px; position: relative; }
+header.entry-header, header.page-header, header.post-header { color: #fff; padding: 50px 0px 10px 0px; margin: 0 0 2.5em 0; height: 245px; position: relative; }
 header.entry-header > .grid.wrap, header.page-header > .grid.wrap, header.post-header > .grid.wrap { position: relative; height: 195px; }
 header.entry-header.has-featured-image, header.page-header.has-featured-image, header.post-header.has-featured-image { background-size: cover; background-position: center 55px; background-repeat: no-repeat; }
 header.entry-header h1.entry-title, header.entry-header h1.page-title, header.page-header h1.entry-title, header.page-header h1.page-title, header.post-header h1.entry-title, header.post-header h1.page-title { margin-top: 0px; display: inline; position: absolute; bottom: 0px; left: 0px; line-height: 1em; background: rgba(0, 0, 0, 0.7); padding: 3px 5px 3px 5px; margin-left: 10px; box-shadow: 10px 0 0 rgba(0, 0, 0, 0.7), -10px 0 0 rgba(0, 0, 0, 0.7); background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px; }
@@ -1026,13 +1026,15 @@ header.entry-header h1.entry-title.long-title, header.entry-header h1.page-title
 
 .light-bg { background: rgba(255, 255, 255, 0.8); background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }
 
-.entry-content.light-bg { margin-top: 0px; padding: 40px 30px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 0px 4px 4px 4px; border-radius: 0px 4px 4px 4px; }
+.entry-content.light-bg { margin-top: -2.5em; padding: 30px 30px 40px 30px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 0px 4px 4px 4px; border-radius: 0px 4px 4px 4px; }
 
 /** -------------------- Archive pages ------------------ */
 h1 svg { margin-right: 28px; }
 
-.archive article, .archive article.grid.wrap { margin: 10px auto; }
-.archive article:first-child, .archive article.grid.wrap:first-child { margin-top: 0px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 0px 4px 4px 4px; border-radius: 0px 4px 4px 4px; }
+.archive article, .archive article.grid.wrap { margin: 15px auto; clear: both; }
+
+.taxonomy-description { display: block; margin: 195px 0 20px 0; background: rgba(0, 0, 0, 0.5); padding: 5px 20px; }
+.taxonomy-description p { margin: 0; padding: 0; }
 
 /*--------------------------------------------------------------
 10.2 Asides

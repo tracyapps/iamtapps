@@ -376,7 +376,7 @@ header.page-header,
 header.post-header {
 	color: $white;
 	padding: 50px 0px 10px 0px;
-	margin: 0;
+	margin: 0 0 2.5em 0;
 	height: 245px;
 	position: relative;
 	> .grid.wrap {
@@ -415,8 +415,8 @@ header.post-header {
 	@include border-radius(4px);
 }
 .entry-content.light-bg {
-	margin-top: 0px;
-	padding: 40px 30px;
+	margin-top: -2.5em;
+	padding: 30px 30px 40px 30px;
 	@include border-radius(0px 4px 4px 4px);
 }
 
@@ -430,10 +430,18 @@ h1 svg {
 .archive {
 	article,
 	article.grid.wrap {
-		margin: 10px auto;
-		&:first-child {
-			margin-top: 0px;
-			@include border-radius(0px 4px 4px 4px);
-		}
+		margin: 15px auto;
+		clear:both;
+	}
+}
+
+.taxonomy-description {
+	display: block;
+	margin: 195px 0 20px 0;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 5px 20px;
+	p {
+		margin: 0;
+		padding: 0;
 	}
 }

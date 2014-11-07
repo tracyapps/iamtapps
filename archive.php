@@ -73,15 +73,13 @@ get_header(); ?>
 							endif;
 						?>
 					</h1>
-					<div class="taxonomy-description">
-						<?php
-						// Show an optional term description.
-						$term_description = term_description();
-						if ( ! empty( $term_description ) ) :
-							printf( '<div class="taxonomy-description">%s</div>', $term_description );
-						endif;
-						?>
-					</div>
+					<?php
+					// Show an optional term description.
+					$term_description = term_description();
+					if ( ! empty( $term_description ) ) :
+						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					endif;
+					?>
 				</div><!--/.grid-->
 			</header><!-- .page-header -->
 
