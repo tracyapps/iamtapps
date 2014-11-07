@@ -207,7 +207,7 @@
 	}
 }
 
-#homepage-samples {
+#some-work-samples {
 	padding: 30px 0px;
 	color: transparentize( $offwhite, 0.3 );
 	.grid {
@@ -314,9 +314,24 @@
 		padding-top: 30px;
 		clear: both;
 	}
+	&.smaller-list { /* this styles the list on the single-portfolio page */
+		.grid .example {
+			width:33%;
+			figcaption {
+				padding: 10px 15px;
+				h6 {
+					font-size: 1.6em;
+				}
+				p {
+					margin: 20px 20px 10px 20px;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
 }
 @media all and ( max-width: 700px ) {
-	#homepage-samples .grid .example {
+	#some-work-samples .grid .example {
 		figcaption {
 			padding: 10px 15px;
 			h6 {
@@ -329,7 +344,7 @@
 	}
 }
 @media all and ( max-width: 600px ) {
-	#homepage-samples .grid .example {
+	#some-work-samples .grid .example {
 		figcaption {
 			padding: 10px 15px;
 			h6 {
@@ -344,7 +359,7 @@
 	}
 }
 @media all and ( max-width: 450px ) {
-	#homepage-samples .grid .example {
+	#some-work-samples .grid .example {
 		width: 100%;
 		float: none;
 
@@ -353,7 +368,7 @@
 
 #page.phone,
 #page.tablet {
-	#homepage-samples {
+	#some-work-samples {
 		.grid .example {
 			img {
 				opacity: 0.4;
@@ -397,6 +412,17 @@
 	position: absolute;
 	bottom: 5px;
 	right: 15px;
+}
+#some-work-samples.smaller-list {
+	.example-category-tag {
+		bottom: 12px;
+		right: 10px;
+		padding: 0px 0px 4px 0px;
+	}
+	.example-category-icon {
+		bottom: 0px;
+		right: 5px;
+	}
 }
 
 /**

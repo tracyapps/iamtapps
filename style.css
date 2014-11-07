@@ -992,31 +992,36 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #page.phone #what-i-do, #page.tablet #what-i-do { width: 95%; margin: 0px auto; }
 
 @media all and (max-width: 600px) { #page.phone #what-i-do .catbox { width: 48%; } }
-#homepage-samples { padding: 30px 0px; color: rgba(245, 244, 242, 0.7); }
-#homepage-samples .grid .example { position: relative; display: block; overflow: hidden; width: 50%; margin: 0px; padding: 0px; border: 3px solid #222; float: left; background-color: rgba(34, 121, 116, 0.3); background-image: -webkit-linear-gradient(-225deg, rgba(34, 121, 116, 0.3) 0%, rgba(47, 88, 134, 0.5) 100%); background-image: linear-gradient(-45deg,rgba(34, 121, 116, 0.3) 0%, rgba(47, 88, 134, 0.5) 100%); }
-#homepage-samples .grid .example img { position: relative; display: block; min-height: 100%; min-width: 100%; width: auto; height: auto; opacity: 0.8; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
-#homepage-samples .grid .example figcaption { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 40px 55px 20px 17px; color: #fff; }
-#homepage-samples .grid .example figcaption::before, #homepage-samples .grid .example figcaption::after { position: absolute; top: 10px; right: 10px; bottom: 10px; left: 10px; content: ''; opacity: 0; -webkit-transition: opacity 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out, -moz-transform 0.35s ease-in-out; transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out; }
-#homepage-samples .grid .example figcaption::before { border-top: 1px solid rgba(245, 244, 242, 0.3); border-bottom: 1px solid rgba(245, 244, 242, 0.3); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
-#homepage-samples .grid .example figcaption::after { border-right: 1px solid rgba(245, 244, 242, 0.5); border-left: 1px solid rgba(245, 244, 242, 0.5); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
-#homepage-samples .grid .example figcaption h6 { display: inline; text-transform: uppercase; font-weight: normal; font-size: 1.8em; background: rgba(0, 0, 0, 0.8); padding: 1px 5px 5px 5px; margin: 20px 0px 0px 0px; line-height: 1.7em; box-shadow: 5px 0 0 rgba(0, 0, 0, 0.8), -5px 0 0 rgba(0, 0, 0, 0.8); }
-#homepage-samples .grid .example figcaption p { margin: 40px 25px 0px 45px; padding: 10px 0px 0px 0px; border-top: 1px solid rgba(245, 244, 242, 0.7); opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
-#homepage-samples .grid .example figcaption > a { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; text-indent: 200%; white-space: nowrap; font-size: 0; opacity: 0; }
-#homepage-samples .grid .example:hover img { opacity: 0.4; }
-#homepage-samples .grid .example:hover figcaption::before, #homepage-samples .grid .example:hover figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
-#homepage-samples .grid .example:hover p { opacity: 1; }
-#homepage-samples .more-examples { padding-top: 30px; clear: both; }
+#some-work-samples { padding: 30px 0px; color: rgba(245, 244, 242, 0.7); }
+#some-work-samples .grid .example { position: relative; display: block; overflow: hidden; width: 50%; margin: 0px; padding: 0px; border: 3px solid #222; float: left; background-color: rgba(34, 121, 116, 0.3); background-image: -webkit-linear-gradient(-225deg, rgba(34, 121, 116, 0.3) 0%, rgba(47, 88, 134, 0.5) 100%); background-image: linear-gradient(-45deg,rgba(34, 121, 116, 0.3) 0%, rgba(47, 88, 134, 0.5) 100%); }
+#some-work-samples .grid .example img { position: relative; display: block; min-height: 100%; min-width: 100%; width: auto; height: auto; opacity: 0.8; -webkit-transition: all 0.35s ease-in-out; -moz-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+#some-work-samples .grid .example figcaption { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 40px 55px 20px 17px; color: #fff; }
+#some-work-samples .grid .example figcaption::before, #some-work-samples .grid .example figcaption::after { position: absolute; top: 10px; right: 10px; bottom: 10px; left: 10px; content: ''; opacity: 0; -webkit-transition: opacity 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out, -moz-transform 0.35s ease-in-out; transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out; }
+#some-work-samples .grid .example figcaption::before { border-top: 1px solid rgba(245, 244, 242, 0.3); border-bottom: 1px solid rgba(245, 244, 242, 0.3); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
+#some-work-samples .grid .example figcaption::after { border-right: 1px solid rgba(245, 244, 242, 0.5); border-left: 1px solid rgba(245, 244, 242, 0.5); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
+#some-work-samples .grid .example figcaption h6 { display: inline; text-transform: uppercase; font-weight: normal; font-size: 1.8em; background: rgba(0, 0, 0, 0.8); padding: 1px 5px 5px 5px; margin: 20px 0px 0px 0px; line-height: 1.7em; box-shadow: 5px 0 0 rgba(0, 0, 0, 0.8), -5px 0 0 rgba(0, 0, 0, 0.8); }
+#some-work-samples .grid .example figcaption p { margin: 40px 25px 0px 45px; padding: 10px 0px 0px 0px; border-top: 1px solid rgba(245, 244, 242, 0.7); opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
+#some-work-samples .grid .example figcaption > a { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; text-indent: 200%; white-space: nowrap; font-size: 0; opacity: 0; }
+#some-work-samples .grid .example:hover img { opacity: 0.4; }
+#some-work-samples .grid .example:hover figcaption::before, #some-work-samples .grid .example:hover figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+#some-work-samples .grid .example:hover p { opacity: 1; }
+#some-work-samples .more-examples { padding-top: 30px; clear: both; }
+#some-work-samples.smaller-list { /* this styles the list on the single-portfolio page */ }
+#some-work-samples.smaller-list .grid .example { width: 33%; }
+#some-work-samples.smaller-list .grid .example figcaption { padding: 10px 15px; }
+#some-work-samples.smaller-list .grid .example figcaption h6 { font-size: 1.6em; }
+#some-work-samples.smaller-list .grid .example figcaption p { margin: 20px 20px 10px 20px; padding-top: 5px; }
 
-@media all and (max-width: 700px) { #homepage-samples .grid .example figcaption { padding: 10px 15px; }
-  #homepage-samples .grid .example figcaption h6 { font-size: 1.5em; }
-  #homepage-samples .grid .example figcaption p { margin: 25px 20px 0px 25px; } }
-@media all and (max-width: 600px) { #homepage-samples .grid .example figcaption { padding: 10px 15px; }
-  #homepage-samples .grid .example figcaption h6 { font-size: 1.3em; padding: 1px 3px 3px 3px; line-height: 1.6em; }
-  #homepage-samples .grid .example figcaption p { margin: 25px 20px 0px 25px; } }
-@media all and (max-width: 450px) { #homepage-samples .grid .example { width: 100%; float: none; } }
-#page.phone #homepage-samples .grid .example img, #page.tablet #homepage-samples .grid .example img { opacity: 0.4; border: 5px solid rgba(0, 0, 0, 0.7); }
-#page.phone #homepage-samples .grid .example figcaption::before, #page.phone #homepage-samples .grid .example figcaption::after, #page.tablet #homepage-samples .grid .example figcaption::before, #page.tablet #homepage-samples .grid .example figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
-#page.phone #homepage-samples .grid .example p, #page.tablet #homepage-samples .grid .example p { opacity: 1; }
+@media all and (max-width: 700px) { #some-work-samples .grid .example figcaption { padding: 10px 15px; }
+  #some-work-samples .grid .example figcaption h6 { font-size: 1.5em; }
+  #some-work-samples .grid .example figcaption p { margin: 25px 20px 0px 25px; } }
+@media all and (max-width: 600px) { #some-work-samples .grid .example figcaption { padding: 10px 15px; }
+  #some-work-samples .grid .example figcaption h6 { font-size: 1.3em; padding: 1px 3px 3px 3px; line-height: 1.6em; }
+  #some-work-samples .grid .example figcaption p { margin: 25px 20px 0px 25px; } }
+@media all and (max-width: 450px) { #some-work-samples .grid .example { width: 100%; float: none; } }
+#page.phone #some-work-samples .grid .example img, #page.tablet #some-work-samples .grid .example img { opacity: 0.4; border: 5px solid rgba(0, 0, 0, 0.7); }
+#page.phone #some-work-samples .grid .example figcaption::before, #page.phone #some-work-samples .grid .example figcaption::after, #page.tablet #some-work-samples .grid .example figcaption::before, #page.tablet #some-work-samples .grid .example figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+#page.phone #some-work-samples .grid .example p, #page.tablet #some-work-samples .grid .example p { opacity: 1; }
 
 .example-category-tag { display: block; width: 100%; padding: 3px 0 7px 0; text-align: center; position: absolute; bottom: 0px; right: 0px; background: rgba(0, 0, 0, 0.6); color: #fff; -webkit-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -moz-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -ms-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -o-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); }
 .example-category-tag a { color: #fff; }
@@ -1028,6 +1033,9 @@ a:hover, a:focus, a:active { color: midnightblue; }
 .example-category-tag.speaking-teaching { background: rgba(42, 63, 121, 0.9); }
 
 .example-category-icon { position: absolute; bottom: 5px; right: 15px; }
+
+#some-work-samples.smaller-list .example-category-tag { bottom: 12px; right: 10px; padding: 0px 0px 4px 0px; }
+#some-work-samples.smaller-list .example-category-icon { bottom: 0px; right: 5px; }
 
 /** -------------------- Page ------------------ */
 header.entry-header, header.page-header, header.post-header { color: #fff; padding: 50px 0px 10px 0px; margin: 0 0 3.8em 0; height: 245px; position: relative; }

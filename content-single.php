@@ -31,7 +31,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer grid wrap">
 		<?php iamtapps_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

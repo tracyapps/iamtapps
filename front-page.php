@@ -75,7 +75,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 						</div>
 					</div>
 				</div>
-				<div id="homepage-samples" class="section bg-color clearfix">
+				<div id="some-work-samples" class="section bg-color clearfix">
 					<div class="grid wrap">
 
 						<h4>Some examples:</h4>
