@@ -1007,7 +1007,7 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #some-work-samples .grid .example:hover p { opacity: 1; }
 #some-work-samples .more-examples { padding-top: 30px; clear: both; }
 #some-work-samples.smaller-list { /* this styles the list on the single-portfolio page */ }
-#some-work-samples.smaller-list .grid .example { width: 33%; }
+#some-work-samples.smaller-list .grid .example { width: 33%; height: auto; }
 #some-work-samples.smaller-list .grid .example figcaption { padding: 10px 15px; }
 #some-work-samples.smaller-list .grid .example figcaption h6 { font-size: 1.6em; }
 #some-work-samples.smaller-list .grid .example figcaption p { margin: 20px 20px 10px 20px; padding-top: 5px; }
@@ -1019,8 +1019,8 @@ a:hover, a:focus, a:active { color: midnightblue; }
 @media all and (max-width: 600px) { #some-work-samples .grid .example figcaption { padding: 10px 15px; }
   #some-work-samples .grid .example figcaption h6 { font-size: 1.3em; padding: 1px 3px 3px 3px; line-height: 1.6em; }
   #some-work-samples .grid .example figcaption p { margin: 25px 20px 0px 25px; }
-  #some-work-samples.smaller-list .grid .example { width: 50%; } }
-@media all and (max-width: 450px) { #some-work-samples .grid .example, #some-work-samples.smaller-list .grid .example { width: 100%; float: none; } }
+  #some-work-samples.smaller-list .grid .example { width: 50%; height: auto; } }
+@media all and (max-width: 450px) { #some-work-samples .grid .example, #some-work-samples.smaller-list .grid .example { width: 100%; float: none; height: auto; } }
 #page.phone #some-work-samples .grid .example img, #page.tablet #some-work-samples .grid .example img { opacity: 0.4; border: 5px solid rgba(0, 0, 0, 0.7); }
 #page.phone #some-work-samples .grid .example figcaption::before, #page.phone #some-work-samples .grid .example figcaption::after, #page.tablet #some-work-samples .grid .example figcaption::before, #page.tablet #some-work-samples .grid .example figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
 #page.phone #some-work-samples .grid .example p, #page.tablet #some-work-samples .grid .example p { opacity: 1; }

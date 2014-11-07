@@ -317,6 +317,7 @@
 	&.smaller-list { /* this styles the list on the single-portfolio page */
 		.grid .example {
 			width:33%;
+			height: auto;
 			figcaption {
 				padding: 10px 15px;
 				h6 {
@@ -370,6 +371,7 @@
 		&.smaller-list {
 			.grid .example {
 				width: 50%;
+				height: auto;
 			}
 		}
 	}
@@ -380,7 +382,7 @@
 		.grid .example {
 			width: 100%;
 			float: none;
-
+			height: auto;
 		}
 	}
 }
