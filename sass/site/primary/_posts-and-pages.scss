@@ -296,7 +296,7 @@
 			}
 			&:hover {
 				img {
-					opacity: 0.4;
+					opacity: 0.3;
 				}
 				figcaption::before,
 				figcaption::after {
@@ -331,38 +331,57 @@
 	}
 }
 @media all and ( max-width: 700px ) {
-	#some-work-samples .grid .example {
-		figcaption {
-			padding: 10px 15px;
-			h6 {
-				font-size: 1.5em;
+	#some-work-samples {
+		.grid .example {
+			figcaption {
+				padding: 10px 15px;
+				h6 {
+					font-size: 1.5em;
+				}
+				p {
+					margin: 25px 20px 0px 25px;
+				}
 			}
-			p {
-				margin: 25px 20px 0px 25px;
+		}
+		&.smaller-list {
+			.grid .example {
+				figcaption h6 {
+					font-size: 1.3em;
+				}
 			}
 		}
 	}
 }
 @media all and ( max-width: 600px ) {
-	#some-work-samples .grid .example {
-		figcaption {
-			padding: 10px 15px;
-			h6 {
-				font-size: 1.3em;
-				padding: 1px 3px 3px 3px;
-				line-height: 1.6em;
+	#some-work-samples {
+		.grid .example {
+			figcaption {
+				padding: 10px 15px;
+				h6 {
+					font-size: 1.3em;
+					padding: 1px 3px 3px 3px;
+					line-height: 1.6em;
+				}
+				p {
+					margin: 25px 20px 0px 25px;
+				}
 			}
-			p {
-				margin: 25px 20px 0px 25px;
+		}
+		&.smaller-list {
+			.grid .example {
+				width: 50%;
 			}
 		}
 	}
 }
 @media all and ( max-width: 450px ) {
-	#some-work-samples .grid .example {
-		width: 100%;
-		float: none;
+	#some-work-samples,
+	#some-work-samples.smaller-list {
+		.grid .example {
+			width: 100%;
+			float: none;
 
+		}
 	}
 }
 
