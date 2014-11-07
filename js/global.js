@@ -34,9 +34,11 @@
 })();
 
 
-// blast.js
 ( function( $ ) {
+	// flexnav
+	$(".flexnav").flexNav();
 
+	// blast.js
 	$( ".animatein" )
 	// Blast the text apart by word.
 	.blast({ delimiter: "word" })
@@ -47,8 +49,6 @@
 		stagger: 90,
 		delay: 150
 	});
-
-	$(".flexnav").flexNav();
 
 	// example boxes, making sure the height equals the width
 	var cw = $('.example').width();

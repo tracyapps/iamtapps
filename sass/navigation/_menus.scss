@@ -57,6 +57,11 @@
 		}
 	}
 }
+.menu-button.one-page,
+.flexnav.one-page,
+.menu-main-menu-container {
+	z-index: 3000;
+}
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
