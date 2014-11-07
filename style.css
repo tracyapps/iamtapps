@@ -77,13 +77,13 @@ h1.site-title { font-size: 6em; color: #fff; text-shadow: 1px 1px 0 rgba(0, 0, 0
 h2 { font-size: 3.0em; font-family: "Love Ya Like A Sister", cursive; }
 h2.site-description { font: 1.4em/1em "News Cycle", sans-serif; margin: -5px 0px 0px -10px; color: rgba(255, 255, 255, 0.65); -webkit-transition: color 0.5s ease; -moz-transition: color 0.5s ease; transition: color 0.5s ease; }
 
-h3 { font-size: 2.0em; font-weight: 700; }
+h3 { font-size: 2.0em; font-weight: 700; line-height: 1.1em; }
 
-h4 { font-size: 1.5em; font-weight: 700; }
+h4 { font-size: 1.5em; font-weight: 700; line-height: 1.1em; }
 
-h5 { font-size: 1.4em; font-weight: 700; }
+h5 { font-size: 1.4em; font-weight: 700; line-height: 1.1em; }
 
-h6 { font-size: 1.1em; font-weight: 700; }
+h6 { font-size: 1.1em; font-weight: 700; line-height: 1.1em; }
 
 #page.phone h1.site-title { margin-top: 0.9em; }
 #page.phone h2.site-description { margin-top: 10px; }
