@@ -321,7 +321,7 @@
 			figcaption {
 				padding: 10px 15px;
 				h6 {
-					font-size: 1.6em;
+					font-size: 1.5em;
 				}
 				p {
 					margin: 20px 20px 10px 20px;
@@ -346,6 +346,8 @@
 		}
 		&.smaller-list {
 			.grid .example {
+				width: 50%;
+				height: auto;
 				figcaption h6 {
 					font-size: 1.3em;
 				}
@@ -366,12 +368,6 @@
 				p {
 					margin: 25px 20px 0px 25px;
 				}
-			}
-		}
-		&.smaller-list {
-			.grid .example {
-				width: 50%;
-				height: auto;
 			}
 		}
 	}
@@ -434,6 +430,18 @@
 	bottom: 5px;
 	right: 15px;
 }
+@media all and ( max-width: 900px ) {
+	.example-category-tag {
+		padding: 0 0 4px 0;
+	}
+}
+@media all and ( max-width: 700px ) {
+	.example-category-tag {
+		bottom: 20px;
+		right: 12px;
+	}
+}
+
 #some-work-samples.smaller-list {
 	.example-category-tag {
 		bottom: 12px;
@@ -445,10 +453,30 @@
 		right: 5px;
 	}
 }
+@media all and ( max-width: 800px ) and ( min-width: 700px ) {
+	#some-work-samples.smaller-list {
+		.example-category-tag {
+			bottom: 20px;
+			right: 12px;
+		}
+		.example-category-icon {
+			bottom: -2px;
+			right: 2px;
+		}
+	}
+}
+@media all and ( max-width: 450px ) {
+	#some-work-samples.smaller-list {
+		.example-category-tag {
+			bottom: 0px;
+			right: 5px;
+		}
+	}
+}
 
-/**
- *  -------------------- Page ------------------
- */
+	/**
+	 *  -------------------- Page ------------------
+	 */
 
 header.entry-header,
 header.page-header,

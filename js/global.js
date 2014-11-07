@@ -18,7 +18,7 @@
 	//end SVG background 1
 
 	//SVG background 2
-	var samples = document.getElementById('homepage-samples');
+	var samples = document.getElementById('some-work-samples');
 	var svg2 = document.getElementById('bgtexture2');
 
 	// Convert the SVG node to HTML.
@@ -29,7 +29,7 @@
 	var b64 = 'data:image/svg+xml;base64,'+window.btoa(div.innerHTML);
 	var url = 'url("' + b64 + '")';
 	samples.style.backgroundImage = url;
-	//end SVG background 1
+	//end SVG background 2
 
 })();
 
