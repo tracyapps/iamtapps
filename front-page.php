@@ -108,7 +108,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 							<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
 						<div class="textcenter more-examples">
-							<p><a href="/examples/" class="button">See more examples here<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></p>
+							<p><a href="/portfolio/" class="button">See more examples here<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></p>
 						</div>
 					</div>
 				</div>
