@@ -376,7 +376,7 @@ header.page-header,
 header.post-header {
 	color: $white;
 	padding: 50px 0px 10px 0px;
-	margin: 0 0 2.5em 0;
+	margin: 0 0 3.8em 0;
 	height: 245px;
 	position: relative;
 	> .grid.wrap {
@@ -415,7 +415,7 @@ header.post-header {
 	@include border-radius(4px);
 }
 .entry-content.light-bg {
-	margin-top: -2.5em;
+	margin-top: -3.8em;
 	padding: 30px 30px 40px 30px;
 	@include border-radius(0px 4px 4px 4px);
 }
