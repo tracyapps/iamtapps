@@ -244,3 +244,14 @@ function add_custom_types_to_tax( $query ) {
 	}
 }
 add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
+
+/**
+ * Finds the display length of the article title
+ *
+ * @param string $title
+ * @return int
+ */
+function iamtapps_get_title_length( $title ) {
+	$title = preg_replace( '/&(\#[1-9][0-9]{1,3}|[A-Za-z][0-9A-Za-z]+);/', ' ', $title );
+	return strlen( $title );
+}

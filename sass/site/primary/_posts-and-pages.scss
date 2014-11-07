@@ -368,34 +368,72 @@
 }
 
 /**
- *  -------------------- Page  ------------------
+ *  -------------------- Page ------------------
  */
 
 header.entry-header,
 header.page-header,
 header.post-header {
 	color: $white;
-	padding: 130px 0px 10px 0px;
+	padding: 50px 0px 10px 0px;
 	margin: 0;
 	height: 245px;
+	position: relative;
+	> .grid.wrap {
+		position: relative;
+		height: 195px;
+	}
 	&.has-featured-image {
-		background-size: auto 190px;
+		background-size: cover;
 		background-position: center 55px;
 		background-repeat: no-repeat;
 	}
 	h1.entry-title,
 	h1.page-title {
-		margin-top: 1em;
+		margin-top: 0px;
 		display: inline;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		line-height: 1em;
 		background: rgba(0, 0, 0, 0.7);
-		padding: 3px 5px 2px 5px;
+		padding: 3px 5px 3px 5px;
 		margin-left: 10px;
 		box-shadow: 10px 0 0 rgba(0, 0, 0, 0.7), -10px 0 0 rgba(0, 0, 0, 0.7);
+		@include border-radius(4px 4px 0px 0px);
+		&.long-title {
+			font-size: 3em;
+			margin-top: 15px;
+			line-height: 1.27em;
+			padding: 1px 5px;
+		}
 	}
 }
-.entry-content.light-bg {
-	padding: 40px 30px;
+
+.light-bg {
 	background: rgba(255,255,255,0.8);
-	margin-top: -25px;
+	@include border-radius(4px);
+}
+.entry-content.light-bg {
+	margin-top: 0px;
+	padding: 40px 30px;
 	@include border-radius(0px 4px 4px 4px);
+}
+
+/**
+ *  -------------------- Archive pages ------------------
+ */
+
+h1 svg {
+	margin-right: 28px;
+}
+.archive {
+	article,
+	article.grid.wrap {
+		margin: 10px auto;
+		&:first-child {
+			margin-top: 0px;
+			@include border-radius(0px 4px 4px 4px);
+		}
+	}
 }

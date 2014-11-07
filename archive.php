@@ -16,9 +16,13 @@ get_header(); ?>
 
 			<header class="page-header">
 				<div class="grid wrap">
-					<h1 class="page-title">
+					<h1 class="page-title<?php echo ( strlen( get_the_title() ) > 30 ) ? ' long-title' : '' ?>">
 						<?php
 							if ( is_category() ) :
+								$category = get_category( get_query_var( 'cat' ) );
+								$cat_id = $category->cat_ID;
+								$the_category_icon = get_tax_meta( $cat_id, 'tm_category-icon' );
+								echo '<img class="iconic iconic-md" data-src="' . get_template_directory_uri() .'/images/iconic/svg/smart/' . $the_category_icon . '.svg" />';
 								single_cat_title();
 
 							elseif ( is_tag() ) :
