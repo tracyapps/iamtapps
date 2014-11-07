@@ -1000,11 +1000,12 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #homepage-samples .grid .example figcaption::before { border-top: 1px solid rgba(245, 244, 242, 0.3); border-bottom: 1px solid rgba(245, 244, 242, 0.3); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
 #homepage-samples .grid .example figcaption::after { border-right: 1px solid rgba(245, 244, 242, 0.5); border-left: 1px solid rgba(245, 244, 242, 0.5); -webkit-transform: scale(1, 0); transform: scale(1, 0); }
 #homepage-samples .grid .example figcaption h6 { display: inline; text-transform: uppercase; font-weight: normal; font-size: 1.8em; background: rgba(0, 0, 0, 0.8); padding: 1px 5px 5px 5px; margin: 20px 0px 0px 0px; line-height: 1.7em; box-shadow: 5px 0 0 rgba(0, 0, 0, 0.8), -5px 0 0 rgba(0, 0, 0, 0.8); }
-#homepage-samples .grid .example figcaption p { margin: 40px 25px 0px 45px; padding: 10px 0px 0px 0px; border-top: 1px solid rgba(245, 244, 242, 0.7); opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; }
+#homepage-samples .grid .example figcaption p { margin: 40px 25px 0px 45px; padding: 10px 0px 0px 0px; border-top: 1px solid rgba(245, 244, 242, 0.7); opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
 #homepage-samples .grid .example figcaption > a { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; text-indent: 200%; white-space: nowrap; font-size: 0; opacity: 0; }
 #homepage-samples .grid .example:hover img { opacity: 0.4; }
 #homepage-samples .grid .example:hover figcaption::before, #homepage-samples .grid .example:hover figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
 #homepage-samples .grid .example:hover p { opacity: 1; }
+#homepage-samples .more-examples { padding-top: 30px; clear: both; }
 
 @media all and (max-width: 700px) { #homepage-samples .grid .example figcaption { padding: 10px 15px; }
   #homepage-samples .grid .example figcaption h6 { font-size: 1.5em; }
@@ -1017,6 +1018,17 @@ a:hover, a:focus, a:active { color: midnightblue; }
 #page.phone #homepage-samples .grid .example figcaption::before, #page.phone #homepage-samples .grid .example figcaption::after, #page.tablet #homepage-samples .grid .example figcaption::before, #page.tablet #homepage-samples .grid .example figcaption::after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
 #page.phone #homepage-samples .grid .example p, #page.tablet #homepage-samples .grid .example p { opacity: 1; }
 
+.example-category-tag { display: block; width: 100%; padding: 3px 0 7px 0; text-align: center; position: absolute; bottom: 0px; right: 0px; background: rgba(0, 0, 0, 0.6); color: #fff; -webkit-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -moz-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -ms-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); -o-transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); transform: scale(1) rotate(-30deg) translateX(32%) translateY(170%) skewX(-1deg); }
+.example-category-tag a { color: #fff; }
+.example-category-tag.web-development { background: rgba(20, 93, 131, 0.9); }
+.example-category-tag.design { background: rgba(80, 154, 20, 0.9); }
+.example-category-tag.photography { background: rgba(155, 22, 56, 0.9); }
+.example-category-tag.ux-ui { background: rgba(87, 38, 128, 0.9); }
+.example-category-tag.video-storytelling { background: rgba(164, 84, 17, 0.9); }
+.example-category-tag.speaking-teaching { background: rgba(42, 63, 121, 0.9); }
+
+.example-category-icon { position: absolute; bottom: 5px; right: 15px; }
+
 /** -------------------- Page ------------------ */
 header.entry-header, header.page-header, header.post-header { color: #fff; padding: 50px 0px 10px 0px; margin: 0 0 3.8em 0; height: 245px; position: relative; }
 header.entry-header > .grid.wrap, header.page-header > .grid.wrap, header.post-header > .grid.wrap { position: relative; height: 195px; }
@@ -1024,7 +1036,7 @@ header.entry-header.has-featured-image, header.page-header.has-featured-image, h
 header.entry-header h1.entry-title, header.entry-header h1.page-title, header.page-header h1.entry-title, header.page-header h1.page-title, header.post-header h1.entry-title, header.post-header h1.page-title { margin-top: 0px; display: inline; position: absolute; bottom: 0px; left: 0px; line-height: 1em; background: rgba(0, 0, 0, 0.7); padding: 3px 5px 3px 5px; margin-left: 10px; box-shadow: 10px 0 0 rgba(0, 0, 0, 0.7), -10px 0 0 rgba(0, 0, 0, 0.7); background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px; }
 header.entry-header h1.entry-title.long-title, header.entry-header h1.page-title.long-title, header.page-header h1.entry-title.long-title, header.page-header h1.page-title.long-title, header.post-header h1.entry-title.long-title, header.post-header h1.page-title.long-title { font-size: 3em; margin-top: 15px; line-height: 1.27em; padding: 1px 5px; }
 
-.light-bg { background: rgba(255, 255, 255, 0.8); background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; }
+.light-bg { background: rgba(255, 255, 255, 0.8); background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 4px; border-radius: 4px; text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.3); }
 
 .entry-content.light-bg { margin-top: -3.8em; padding: 30px 30px 40px 30px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-border-radius: 0px 4px 4px 4px; border-radius: 0px 4px 4px 4px; }
 

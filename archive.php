@@ -67,6 +67,9 @@ get_header(); ?>
 							elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 								_e( 'Chats', 'iamtapps' );
 
+							elseif ( is_post_type_archive( 'portfolio' ) ) :
+								_e( 'Examples', 'iamtapps' );
+
 							else :
 								_e( 'Archives', 'iamtapps' );
 
@@ -78,6 +81,9 @@ get_header(); ?>
 					$term_description = term_description();
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					endif;
+					if ( is_post_type_archive( 'portfolio' ) ) :
+						echo '<div class="taxonomy-description">Here are just a few of my favorite projects that I have worked on. Enjoy!</div>';
 					endif;
 					?>
 				</div><!--/.grid-->

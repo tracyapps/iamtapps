@@ -8,7 +8,7 @@
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="unit golden-small">
-				<?php the_post_thumbnail( 'portfolio-thumbnail' ); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'portfolio-thumbnail' ); ?></a>
 			</div>
 			<div class="unit golden-large">
 		<?php else : ?>

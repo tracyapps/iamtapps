@@ -78,7 +78,7 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 				<div id="homepage-samples" class="section bg-color clearfix">
 					<div class="grid wrap">
 
-						<h3>some random samples</h3>
+						<h4>Some examples:</h4>
 						<?php $args = array(
 							'post_type' => 'portfolio',
 							'posts_per_page' => '8',
@@ -97,9 +97,19 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 										<p><?php echo esc_html( excerpt(20), 'iamtapps' ); ?> <a href="<?php the_permalink(); ?>" class="button">More<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></p>
 										<a href="<?php the_permalink(); ?>">Read More</a>
 									</figcaption>
+									<?php $category = get_the_category(); ?>
+									<div class="example-category-tag <?php esc_html_e( $category[0]->slug , 'iamtapps' ); ?>">
+										<?php the_category( ' ' ) ;?>
+									</div>
+									<div class="example-category-icon">
+										<img class="iconic iconic-md" data-src="<?php echo get_template_directory_uri() . '/images/iconic/svg/smart/' . get_tax_meta( $category[0]->cat_ID, 'tm_category-icon' ) ; ?>.svg" />
+									</div>
 								</figure>
 							<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
+						<div class="textcenter more-examples">
+							<p><a href="/examples/" class="button">See more examples here<img data-direction="right" data-src="<?php echo get_template_directory_uri(); ?>/images/iconic/svg/smart/chevron.svg" class="iconic iconic-sm" alt="chevron" /></a></p>
+						</div>
 					</div>
 				</div>
 			<?php endwhile; // end of the loop. ?>
